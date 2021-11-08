@@ -31,12 +31,12 @@ const PlansTable = (props) => {
       if (res) {
         setHide(true);
         window.location.href = res.invoice_url;
-        console.log(res);
+        //console.log(res);
         const objectInvoice = {
           invoice: true,
           id: res.id,
         };
-        console.log(objectInvoice);
+        // console.log(objectInvoice);
         localStorage.setItem(name, JSON.stringify(objectInvoice));
       }
     } catch (err) {
@@ -47,8 +47,8 @@ const PlansTable = (props) => {
     try {
       const data = await fetch(`http://localhost:8080/get/${id}`);
       const res = await data.json();
-      console.log(res);
-      console.log(res.status);
+      // console.log(res);
+      //console.log(res.status);
     } catch (err) {
       console.log(err);
     }
@@ -57,7 +57,7 @@ const PlansTable = (props) => {
     try {
       const data = await fetch("http://localhost:8080/invoices");
       const res = await data.json();
-      console.log(res);
+      //  console.log(res);
     } catch (err) {
       console.log(err);
     }

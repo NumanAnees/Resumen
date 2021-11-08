@@ -72,18 +72,20 @@ class ResumesList extends Component {
     try {
       const data = await fetch(`http://localhost:8080/get/${id}`);
       const res = await data.json();
-      // const CurrentUser = JSON.parse(localStorage.getItem("currentResumeItem"));
-      // const currentname =
-      //   CurrentUser.item.firstname + CurrentUser.item.lastname;
-      // if (currentname == name) {
-      //   //abc
-      //   //alert("match");
-      //   if (res.status == "PAID" || res.status == "SETTLED") {
-      //     localStorage.setItem("reload", true);
-      //     this.setState({ reloadState: true });
-      //     this.reloadPage();
-      //   }
-      // }
+      const CurrentUser = JSON.parse(localStorage.getItem("currentResumeItem"));
+      if (CurrentUser) {
+        const currentname =
+          CurrentUser.item.firstname + CurrentUser.item.lastname;
+        if (currentname == name) {
+          //alert("match");
+          if (res.status == "PAID" || res.status == "SETTLED") {
+            console.log("reload");
+            setTimeout(() => {
+              window.location.reload();
+            }, 5000);
+          }
+        }
+      }
       const oldUser = JSON.parse(localStorage.getItem(name));
       oldUser.status = res.status;
 
@@ -124,7 +126,7 @@ class ResumesList extends Component {
         "currentResumeId",
         Math.floosetJsonPbr(Math.random() * 20000).toString() + "xknd"
       );
-      console.log("----> ", localStorage.getItem("currentResumeId"));
+      //console.log("----> ", localStorage.getItem("currentResumeId"));
     }
     await IncrementDownloads();
     setJsonPb(id, values);
@@ -144,7 +146,7 @@ class ResumesList extends Component {
         // handle success
         // const content = response.headers['content-type'];
         // download(response.data, "resume.pdf", content)
-        console.log(response);
+        // console.log(response);
         const content = response.headers["content-type"];
         download(response.data, "resume.pdf", content);
       })
@@ -162,16 +164,17 @@ class ResumesList extends Component {
     localStorage.removeItem("currentResumeDara");
     localStorage.setItem("currentResumeId", resumeId);
     localStorage.setItem("currentResumeItem", data);
-    console.log("Data of resumes");
+    //console.log("Data of resumes");
     var resumeData = JSON.parse(localStorage.getItem("currentResumeItem"));
-    console.log(resumeData.firstname);
+    //onsole.log(resumeData.firstname);
   }
 
   //// List all resumes for that specific user
   returnResumes() {
-    setTimeout(() => {
-      window.location.reload();
-    }, 5000);
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 5000);
+
     var resumes = [];
     for (let index = 0; index < this.state.resumes.length; index++) {
       var downloads = false;
@@ -185,7 +188,7 @@ class ResumesList extends Component {
         const rd = JSON.parse(localStorage.getItem(name));
         if (rd.status == "PAID" || rd.status == "SETTLED") {
           downloads = true;
-          console.log(rd.status);
+          //console.log(rd.status);
         }
       }
       var id = this.state.resumes[index].id;
@@ -217,7 +220,7 @@ class ResumesList extends Component {
         //membershipEnds: this.state.membershipEnds,
         language: this.state.resumes[index].item.language || "en",
       };
-      console.log(this.state.resumes[index]);
+      //console.log(this.state.resumes[index]);
       resumes[index] = (
         <li key={index} className="resumeItem">
           <div

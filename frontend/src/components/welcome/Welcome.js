@@ -235,7 +235,7 @@ class Welcome extends Component {
               membership: value.membership,
               membershipEnds: value.membershipEnds.toDate(),
             });
-            console.log("going to check ");
+            // console.log("going to check ");
             checkSbs(value.membership, value.membershipEnds.toDate()).then(
               (val) => {
                 if (val == "false") {
@@ -995,7 +995,7 @@ class Welcome extends Component {
   }
   /// Remove employment
   removeEmployment(id) {
-    console.log(this.state);
+    // console.log(this.state);
     let pos = null;
     for (let index = 0; index < this.state.employments.length; index++) {
       if (this.state.employments[index].id == id) {
@@ -1011,7 +1011,7 @@ class Welcome extends Component {
 
   /// Remove employment
   removeEducation(id) {
-    console.log("in");
+    //console.log("in");
     let pos = null;
     for (let index = 0; index < this.state.educations.length; index++) {
       if (this.state.educations[index].id == id) {
@@ -1027,7 +1027,7 @@ class Welcome extends Component {
 
   /// Remove employment
   removeLanguage(id) {
-    console.log("in");
+    //console.log("in");
     let pos = null;
     for (let index = 0; index < this.state.languages.length; index++) {
       if (this.state.languages[index].id == id) {
@@ -1043,7 +1043,7 @@ class Welcome extends Component {
 
   /// Remove employment
   removeSkill(id) {
-    console.log("in");
+    //console.log("in");
     let pos = null;
     for (let index = 0; index < this.state.skills.length; index++) {
       if (this.state.skills[index].id == id) {
