@@ -152,6 +152,11 @@ app.get("/invoices", async (req, res) => {
 });
 
 /// Just to check if api is working
+app.get("/api/return", async (req, res) => {
+  res.end("Hello World\n");
+});
+
+//-----------------------------Un-comment this code-------------------------------
 
 // Listen both http & https ports
 // const httpsServer = https.createServer(
@@ -166,17 +171,8 @@ app.get("/invoices", async (req, res) => {
 
 //   }, app);
 
-// httpsServer.listen(port, () => {
-//   console.log("HTTPS Server running on port " + port);
-// });
-//---------------------create invoice-----------------------
+//---------------------Comment/del these 3 lines-----------------------
 
-// http
-//   .createServer(function (req, res) {
-//     res.write("Hello World!"); //write a response to the client
-//     res.end(); //end the response
-//   })
-//   .listen(8080); //the server object listens on port 8080
 app.listen(8080, () => {
   console.log("done");
 });
