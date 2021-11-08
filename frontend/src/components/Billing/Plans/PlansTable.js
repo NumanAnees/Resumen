@@ -12,12 +12,14 @@ const PlansTable = (props) => {
   const [hide, setHide] = useState();
   useEffect(() => {
     var user = JSON.parse(localStorage.getItem("currentResumeItem"));
-    const name = user.item.firstname + user.item.lastname;
-    var check = JSON.parse(localStorage.getItem(name));
-    if (!check) {
-      setHide(false);
-    } else if (check.invoice == true) {
-      setHide(true);
+    if (user) {
+      const name = user.item.firstname + user.item.lastname;
+      var check = JSON.parse(localStorage.getItem(name));
+      if (!check) {
+        setHide(false);
+      } else if (check.invoice == true) {
+        setHide(true);
+      }
     }
   }, []);
   const CreateInvoice = async () => {

@@ -19,6 +19,7 @@ class ResumesList extends Component {
     this.state = {
       resumes: "loading",
       DownloadShow: false,
+      reloadState: undefined,
     };
     this.setAsCurrentResume = this.setAsCurrentResume.bind(this);
     this.returnResumes = this.returnResumes.bind(this);
@@ -26,7 +27,7 @@ class ResumesList extends Component {
     this.startDownload = this.startDownload.bind(this);
     this.download = this.download.bind(this);
     this.ShowToast = this.ShowToast.bind(this);
-    this.reloadPage = this.reloadPage.bind(this);
+    //this.reloadPage = this.reloadPage.bind(this);
   }
   deleteResume(userId, resumeId, indexInState) {
     removeResume(userId, resumeId);
@@ -71,18 +72,47 @@ class ResumesList extends Component {
     try {
       const data = await fetch(`http://localhost:8080/get/${id}`);
       const res = await data.json();
+      // const CurrentUser = JSON.parse(localStorage.getItem("currentResumeItem"));
+      // const currentname =
+      //   CurrentUser.item.firstname + CurrentUser.item.lastname;
+      // if (currentname == name) {
+      //   //abc
+      //   //alert("match");
+      //   if (res.status == "PAID" || res.status == "SETTLED") {
+      //     localStorage.setItem("reload", true);
+      //     this.setState({ reloadState: true });
+      //     this.reloadPage();
+      //   }
+      // }
       const oldUser = JSON.parse(localStorage.getItem(name));
       oldUser.status = res.status;
-      //abc
-      if (res.status == "PAID" || res.status == "SETTLED") {
-        localStorage.setItem("reload", true);
-      }
+
       localStorage.setItem(name, JSON.stringify(oldUser));
     } catch (err) {
       console.log(err);
     }
   }
-
+  // reloadPage() {
+  //   const reload = this.state.reloadState;
+  //   if (reload != undefined) {
+  //     const u = JSON.parse(localStorage.getItem("currentResumeItem"));
+  //     if (u) {
+  //       const uname = u.item.firstname + u.item.lastname;
+  //       const reloadcheck = JSON.parse("reload");
+  //       if (reloadcheck) {
+  //         alert("jell");
+  //         const ur = JSON.parse(localStorage.getItem(uname));
+  //         if (ur) {
+  //           if (ur.status == "PAID" || ur.status == "SETTLED") {
+  //             this.setState({ reloadState: false });
+  //             localStorage.setItem("reload", false);
+  //             window.location.reload();
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   startDownload(values, id) {
     this.ShowToast("Download");
     this.download(values, id);
@@ -136,19 +166,12 @@ class ResumesList extends Component {
     var resumeData = JSON.parse(localStorage.getItem("currentResumeItem"));
     console.log(resumeData.firstname);
   }
-  reloadPage() {
-    var r = JSON.parse(localStorage.getItem("reload"));
-    if (r == true) {
-      localStorage.setItem("reload", false);
-      return window.location.reload();
-    }
-    return;
-  }
+
   //// List all resumes for that specific user
   returnResumes() {
     var resumes = [];
     for (let index = 0; index < this.state.resumes.length; index++) {
-      var download = false;
+      var downloads = false;
 
       const name =
         this.state.resumes[index].item.firstname +
@@ -158,7 +181,7 @@ class ResumesList extends Component {
         this.FindInvoice(r.id, name);
         const rd = JSON.parse(localStorage.getItem(name));
         if (rd.status == "PAID" || rd.status == "SETTLED") {
-          download = true;
+          downloads = true;
           console.log(rd.status);
         }
       }
@@ -233,7 +256,7 @@ class ResumesList extends Component {
               >
                 Remove
               </a>
-              {download ? (
+              {downloads ? (
                 <a
                   onClick={() => this.startDownload(values, id)}
                   style={{ fontSize: "15px", backgroundColor: "#2ecc71" }}
