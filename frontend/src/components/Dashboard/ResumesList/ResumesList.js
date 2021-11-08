@@ -169,6 +169,9 @@ class ResumesList extends Component {
 
   //// List all resumes for that specific user
   returnResumes() {
+    setTimeout(() => {
+      window.location.reload();
+    }, 5000);
     var resumes = [];
     for (let index = 0; index < this.state.resumes.length; index++) {
       var downloads = false;
@@ -272,7 +275,6 @@ class ResumesList extends Component {
         </li>
       );
     }
-    localStorage.setItem("resLength", resumes.length);
     return resumes;
   }
   componentWillMount() {
