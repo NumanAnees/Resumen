@@ -1,0 +1,116 @@
+@import "../../variables.scss";
+.filling {
+    padding: 3rem 4.5rem 4.5rem 4rem;
+}
+.panel-action{
+  //  background-color: red;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        display: inline;
+        margin-left: 10px;
+    }
+
+}
+.delete_Item{
+    height: 14px;
+    width: 15px;
+    position: relative;
+    top: 2px;
+}
+.action-introWrapper {
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    .formHead {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .actionFilling__headAction{
+            display: flex;
+        }
+    }
+    .cvTitle {
+        span {
+            font-size: 32px;
+        }
+    }
+    .progressLabel {
+        .title {
+            font-size: 0.8rem;
+        }
+        .value {
+            font-size: 0.8rem;
+        }
+    }
+    .ads-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0px;
+        .ads-area {
+            width: 500px;
+            height: 90px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    .sectionHeading {
+        margin: 7px 0px;
+        .sectionTitle {
+            font-weight: 600;
+            font-size: 22px;
+            margin: 0px;
+        }
+        .sectionDescription {
+            color: #98a1b3;
+            font-size: 13px;
+            margin: 0px;
+            margin-top: 5px;
+        }
+    }
+    .componentsWrapper {
+        margin-bottom: 70px;
+    }
+    form {
+        margin-top: 20px;
+        .additionalDetailsToggle {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px 0px;
+            img {
+                vertical-align: middle;
+            }
+            span {
+                color: #0042c6;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.grid-2-col {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.authenticationButton {
+    border: 1px solid $btn-default;
+    padding: 10px;
+    border-radius: 5px;
+    color: $btn-default;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-right: 25px;
+    text-decoration: none;
+}
+.authenticationButton:hover {
+    background-color: $btn-default;
+    color: white;
+}

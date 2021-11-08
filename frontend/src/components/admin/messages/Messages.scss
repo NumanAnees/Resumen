@@ -1,0 +1,40 @@
+@import "../../variables.scss";
+.dashboard__contact {
+    padding: 20px;
+    font-family: $font;
+    .dashboard___contactHead {
+        display: flex;
+        align-items: center;
+        h1,
+        span {
+            display: inline;
+        }
+        span {
+            margin-left: 10px;
+            color: rgb(107, 106, 106);
+            font-size: 14px;
+        }
+    }
+    .dashboard__contactTable {
+        .dashboard__ContactTable-circleImage {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: $btn-default;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $font;
+            font-size: 22px;
+        }
+        .dashboard_contactTable-showMessage {
+            font-family: $font;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}

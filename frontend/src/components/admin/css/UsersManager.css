@@ -1,0 +1,68 @@
+.users {
+  font-family: "Poppins";
+  height: 70vh;
+}
+
+.users .users__container {
+  width: 100%;
+  height: 100%;
+}
+
+.users .users__container .users__heading {
+  margin: 20px;
+}
+
+.users .users__container .users__heading h1,
+.users .users__container .users__heading p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.users .users__container .users__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.users .users__container .users__search p {
+  font-weight: 600;
+}
+
+.users .users__container .users__search .searchButton {
+  display: inline !important;
+  margin-top: 10px;
+}
+
+.users .users__container .users__all {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.users .users__container .users__all .show__users {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.users .users__container .users__all .moreImage {
+  width: 25px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=UsersManager.css.map */

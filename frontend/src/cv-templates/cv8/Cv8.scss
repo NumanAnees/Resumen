@@ -1,0 +1,130 @@
+
+@import '../../components/variables.scss';
+
+
+.cv8-board{
+    width: 100%;
+    width: 21cm;
+    height: fit-content !important;
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    font-family: "Arial";
+    color: #3B3B3B;
+    // cv-content
+    .cv8-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        align-items: center;
+        .cv8-head{
+            height: 150px;
+            width: 100%;
+            background:  #353f58;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            .cv8-headBox{
+   
+                padding: 10px 10%;
+                text-align: center;
+                width: fit-content;
+                .cv8-name{
+                    margin: 0px;
+                    font-weight: 500;
+                }
+                .cv8-headBoxHr{
+                    width: 20%;
+                }
+            }
+        } /// head
+
+        //body
+        .cv8-body{
+            display: grid;
+           
+            grid-template-columns: 3fr 1fr;
+            width: 92%;
+            margin-top: 20px;
+            .cv8-leftSide{
+                width: 90%;
+                // Details
+                .cv8-details{
+                  .cv8-detailsContent{
+                      display: flex;
+                      flex-direction: column;
+                      font-size: 11px;
+                  }
+                  margin-bottom: 10px;
+                }///Details
+                .cv8-skills{
+                    .cv8-skill{
+                        .cv8-skillName{
+                            font-size: 11px;
+                        }
+                        .cv8-skillBox{
+                            height: 6px;
+                            border: 1px solid #3d3e42;
+                            margin-bottom: 3px;
+                            .cv8-skillRating{
+                                height: 100%;
+                                background-color: #3d3e42;
+                            }
+                        }
+                    }
+                } /// skills
+                .cv8-languages{
+                     .cv8-languagesItem{
+                         display: flex;
+                         justify-content: space-between;
+                         margin-bottom: 4px;
+                         .cv8-languageName{
+                             font-size: 11px;
+                             font-weight: 600;
+                         }
+                         .cv8-languageLevel{
+                            font-size: 11px;
+                         }
+                     }
+                }
+            }/// Left side
+            //Right side
+            .cv8-rightSide{
+             padding-left: 20px;
+             padding-right: 20px;
+            // border-left: 3px solid #3d3e42;
+             .cv8-profile{
+                 font-size: 12px;
+                 .cv8-employment{
+                     margin-bottom: 10px;
+                    .cv8-employmentsHead{
+                        display: flex;
+                        justify-content: space-between;
+                        .cv8-jobTitle{
+                            font-weight: 600;
+                        }
+                        .cv8-dates{
+                            font-weight: 600;
+                        }
+                        
+                    }
+                 }
+         
+             }
+            }
+            ///Right side
+        }
+        .cv8-SectionTitle{
+            margin-bottom: 10px;
+            span{
+                font-weight: 700;
+                font-size: 24px;
+                text-transform: uppercase;
+               }
+       }
+    }/// cv8-content
+}
+

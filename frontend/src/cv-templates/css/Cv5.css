@@ -1,0 +1,174 @@
+.cv5-board {
+  width: 21cm;
+  min-height: 29.7cm;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins";
+  color: #3B3B3B;
+}
+
+.cv5-board .cv5-content {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  font-size: 14px;
+  -ms-grid-columns: 2fr 5fr;
+      grid-template-columns: 2fr 5fr;
+}
+
+.cv5-board .cv5-content .cv5-left {
+  height: 100%;
+  background-color: #2d3039;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-photo {
+  width: 100%;
+  height: 200px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection {
+  margin-top: 20PX;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-languagesItems .cv5-languagesItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-languagesItems .cv5-languagesItem .cv5-languageCircle {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent {
+  width: 80%;
+  margin: auto;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-skillsItems {
+  color: white;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-skillsItems .cv5-skillItem .cv5-ratingWrapper {
+  width: 95%;
+  height: 8px;
+  border: 2px solid #f0c30e;
+  padding: 4px;
+  margin-top: 5px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-skillsItems .cv5-skillItem .cv5-ratingWrapper .cv5-rating {
+  background-color: #f0c30e;
+  height: 100%;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-leftSectionTitle {
+  color: white;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-leftSectionTitle span {
+  font-size: 20px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-contactItems ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-contactItems ul li {
+  margin: 0px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-contactItems ul li .cv5-contactItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-contactItems ul li .cv5-contactItem img {
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cv5-board .cv5-content .cv5-left .cv5-leftSection .cv5-leftSectionContent .cv5-contactItems ul li .cv5-contactItem span {
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent {
+  width: 90%;
+  margin: auto;
+  color: black !important;
+  padding-top: 50px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-rightSectionTitle {
+  color: black;
+  font-weight: 800;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-rightSectionTitle span {
+  font-size: 20px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-rightHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-rightHead .cv5-name {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-summary p {
+  font-size: 11px;
+  color: #525252;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-experience .cv5-jobItem {
+  margin-bottom: 10px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-experience .cv5-jobItem .cv5-jobTitle {
+  font-weight: 600;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-experience .cv5-jobItem .cv5-jobDate {
+  font-size: 11px;
+}
+
+.cv5-board .cv5-content .cv5-right .cv5-rightContent .cv5-experience .cv5-jobItem p {
+  font-size: 11px;
+  margin: 0px;
+  margin-top: 5px;
+  color: #525252;
+}
+/*# sourceMappingURL=Cv5.css.map */

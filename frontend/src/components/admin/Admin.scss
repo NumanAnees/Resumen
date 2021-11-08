@@ -1,0 +1,52 @@
+@import "../variables.scss";
+.admin {
+    display: flex;
+    // Right
+    height: 100%;
+    background-color: #e1e6ec62;
+    .admin__right {
+        // Navbar
+        height: 100%;
+        width: 100%;
+        overflow-y: scroll;
+        .admin__navbar {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            font-family: $font;
+            align-items: center;
+            .admin__navbar-left {
+                padding: 20px;
+                span {
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+            }
+            .admin__navbar-right {
+                padding: 20px;
+            }
+            .admin__mobileToggle {
+                display: none;
+            }
+            .admin__navbar-user {
+                width: 200px;
+                height: 50px;
+                background-color: rgb(243, 240, 240);
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                img {
+                    width: 40px;
+                }
+                span {
+                    font-size: 14px !important;
+                    font-weight: 600;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

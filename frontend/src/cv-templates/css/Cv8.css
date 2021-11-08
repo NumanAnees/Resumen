@@ -1,0 +1,166 @@
+.cv8-board {
+  width: 100%;
+  width: 21cm;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Arial";
+  color: #3B3B3B;
+}
+
+.cv8-board .cv8-content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv8-board .cv8-content .cv8-head {
+  height: 150px;
+  width: 100%;
+  background: #353f58;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.cv8-board .cv8-content .cv8-head .cv8-headBox {
+  padding: 10px 10%;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.cv8-board .cv8-content .cv8-head .cv8-headBox .cv8-name {
+  margin: 0px;
+  font-weight: 500;
+}
+
+.cv8-board .cv8-content .cv8-head .cv8-headBox .cv8-headBoxHr {
+  width: 20%;
+}
+
+.cv8-board .cv8-content .cv8-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  width: 92%;
+  margin-top: 20px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide {
+  width: 90%;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-details {
+  margin-bottom: 10px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-details .cv8-detailsContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 11px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-skills .cv8-skill .cv8-skillName {
+  font-size: 11px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-skills .cv8-skill .cv8-skillBox {
+  height: 6px;
+  border: 1px solid #3d3e42;
+  margin-bottom: 3px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-skills .cv8-skill .cv8-skillBox .cv8-skillRating {
+  height: 100%;
+  background-color: #3d3e42;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-languages .cv8-languagesItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-languages .cv8-languagesItem .cv8-languageName {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-leftSide .cv8-languages .cv8-languagesItem .cv8-languageLevel {
+  font-size: 11px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-rightSide {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-rightSide .cv8-profile {
+  font-size: 12px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-rightSide .cv8-profile .cv8-employment {
+  margin-bottom: 10px;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-rightSide .cv8-profile .cv8-employment .cv8-employmentsHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-rightSide .cv8-profile .cv8-employment .cv8-employmentsHead .cv8-jobTitle {
+  font-weight: 600;
+}
+
+.cv8-board .cv8-content .cv8-body .cv8-rightSide .cv8-profile .cv8-employment .cv8-employmentsHead .cv8-dates {
+  font-weight: 600;
+}
+
+.cv8-board .cv8-content .cv8-SectionTitle {
+  margin-bottom: 10px;
+}
+
+.cv8-board .cv8-content .cv8-SectionTitle span {
+  font-weight: 700;
+  font-size: 24px;
+}
+/*# sourceMappingURL=Cv8.css.map */

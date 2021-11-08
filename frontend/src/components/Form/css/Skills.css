@@ -1,0 +1,72 @@
+.panel {
+  margin: 10px 0px;
+  border: 2px solid #F8FAFE;
+  border-radius: 5px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all  ease-in-out;
+  transition: all  ease-in-out;
+}
+
+.panel .panel-heading {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all  ease-in-out;
+  transition: all  ease-in-out;
+}
+
+.panel .panel-heading .panel-title {
+  font-weight: 600;
+  font-size: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panel .panel-heading .panel-subtitle {
+  width: 50%;
+  font-size: 15px;
+  margin-left: 20px;
+  color: #98A1B3;
+}
+
+.panel .panel-heading .actionButtons {
+  margin-left: auto;
+}
+
+.panel .panel-heading .actionButtons .cross {
+  height: 14px;
+  margin-right: 10px;
+}
+
+.panel .panel-heading .panel-toggler {
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.panel .panel-heading .panel-toggler-opened {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.panel .panel-body {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+/*# sourceMappingURL=Skills.css.map */

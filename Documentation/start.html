@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Resumen documentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Resume</span><span class="text-bold">N</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol>
+                
+                <div class="top-search-box">
+	                 <form class="form-inline search-form justify-content-center" action="" method="get">
+	            
+			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+			            
+			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+			            
+			        </form>
+                </div>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+ 
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="introduction-section" class="doc-section">
+                                <h2 class="section-title">Introduction </h2>
+                                <div class="section-block">
+                                    <p>
+                                        First of all, I would like to thank you for your purchase of React Resume Builder. in this documentation, I will show you how to work with this web app. Don't worry if you are not a developer this web app is easy to work with. and if you are a developer there is a section in this documentation where you will find all the necessary information you need to be able to deploy with no difficulties.
+                                    </p>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Step One : Firebase</h3>
+                                    <iframe width="100%" height="416" src="https://www.youtube.com/embed/K2h1kTUAvGg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p> Go to your firebase account and create new project </p>
+                                    <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/fire1.png" alt="fontawesome" />
+                                    <p>Give your project a name</p>
+                                     <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/fire2.png" alt="fontawesome" />
+                                     <p>Disable analytics since we are using in app statistics</p>
+                                     <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/fire3.png" alt="fontawesome" />
+                                     <p>Click on this icon to let firebase know that we want to use firebase for web</p>
+                                     <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/fire4.png" alt="fontawesome" />
+                                     <p>Give your app a name and uncheck firebase hosting since we will use a vps.</p>
+                                     <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/fire5.png" alt="fontawesome" />
+                                     <p>We need to connect our app with firebase and this needs to be done from <code>/Resumen/.env</code>  file. we need to replace the data from firebase into ".env" file. Copy the values from firebase into .env file.</p>
+                                     <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/fire6.png" alt="fontawesome" />
+                                     <p>
+                                        We are going to need the built-in firebase authentification service. Please activate Email Authentication, Google Authentication. 
+                                    </p>
+                                    <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/authService.png" alt="fontawesome" />
+                                    <p>We need to change the security rules in firestore. with the one included with the project ( securityRules.txt)</p>
+                                    <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/security.png" alt="fontawesome" />
+                                    <p>Add your domain name to authorized domains. this will let our app login successfully using social authentification</p>
+                                    <img style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/auth333.png" alt="fontawesome" />
+
+
+                                </div><!--//section-block-->
+                                <div id="step2"  class="section-block">
+                                    <h3 class="block-title">Step Two:  App Configuration</h3>
+                                    <p>After we configured our firebase project now we need to configure our app, first make sure you have node.js installed. if not download the LTS from here <a href="https://nodejs.org/en/download/">Node.js Download</a></p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/nodeJs.jfif" alt="fontawesome" />
+                                    <p>Go to this file <code>/Resumen/src/conf/configuration.js</code> and add your email. and your paiment api keys (public keys and not secret keys)</p>
+                                    <pre><code class="language-javascript"> 
+                                        var config = {
+                                            adminEmail:"admin@admin.com",  // The website will consider this email  as an admin 
+                                            brand: {
+                                              useImg: true,  // 320X70 Preferable Size , replace with true if you want to use image logo. and keep false if you want to keep the logo as text
+                                              name: "Resumen"  // This will be shown in the absence of the logo
+                                            },
+                                            paypalClienID:"AQ6HBHBxXvDYYxcGWa34DMvI9ywriPyRdQvEtO2Nx24i-Flo4RiKbG0kit9HFGe9sfTnN6DtrKgatUgj", 
+                                            stripe_publishable_key:"pk_test_51IZbSFKcjLOayGZuxoP6THn0XX1m58w4ER2MxMKIjOgIaKsFINTt9Vi8OnfvcV2WaCjhB24mxNpMY1dMEciebpgW00hegvTU6L",  // Make sure its th publishable key
+                                            backendUrl:"domain.com"  // our domain in this format :  domain.com . if you use subdomain for the app then it should be like : subdomain.domain.com 
+                                          }
+                                          export default config
+                                  </code></pre>
+
+                                  <p>Go back to <code>/ResumeN</code> , open command prompt and execute this command to install all our dependencies. </p>
+                       
+                                  <code>npm install</code>
+                                  <p>Then this one, to build our app. and that will be the last step for application configuration</p>
+                                  <code>npm run build</code>
+
+                                </div><!--//section-block-->
+                                <div id="step3"  class="section-block">
+                                    <h3 class="block-title">Step Three : Deployment</h3>
+                                    <iframe width="100%" height="416" src="https://www.youtube.com/embed/UZKGGkF53hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p>
+                                        In order to deploy our application we will need an ubuntu vps with Nginx from digitalocean. By using our referal link you will get 100$ on your balance that will be enough to run the app for a long period of time. 
+                                        <a href="https://m.do.co/c/8ee2d724b4c5">Create Digitalocean account</a>
+                                    </p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/1.PNG" alt="fontawesome" />
+                                    <p>Click on create droplet. then click on marketplace and pick LEMP</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/2.PNG" alt="fontawesome" />
+                                    <p>Pick a location close to you</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/3.PNG" alt="fontawesome" />
+                                    <p>Set your root password</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/4.PNG" alt="fontawesome" />
+                                    <p>Then click on <b>Create droplet</b></p>
+                                    <b>Add domain name</b>
+                                    <p>To add a domain name follow this tutorial right here <a href="https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars"><b>How to add domain name to Digitalocean</b></a></p>
+                                    <p>once you add  Digitalocean Namespaces to your domain provider now you can add the domain </p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/5.PNG" alt="fontawesome" />
+                                    <p>Enter your domain without www. and click on add domain </p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/6.PNG" alt="fontawesome" />
+                                    <p>Now we have to add a new host name, type www and select your droplet and click create record</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/7.PNG" alt="fontawesome" />
+                                    <p>Let's wait couple of minutes then navigate to your domain you should see this Digitalocan default page</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/8.PNG" alt="fontawesome" />
+                                    <p>If you added your domain but it doesnt show you this page. this means you have done something wrong. and it is advised to check if you added namespaces to you domain provider  corectly.</p>
+                                    <p>As you can see that our website is being served over http. which is not secure. next we will configure our vps to serve our website throu HTTPS</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/9.PNG" alt="fontawesome" />
+                                    <p><b>Connect to our vps</b></p>
+                                    <p>We need to connect to our vps with SSh for this reason we are goin to use Putty. <b><a href="https://www.putty.org/">You can download Putty from Here</a></b> add your server ip address and click open. it will ask you to authenticate with root.  </p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/10.PNG" alt="fontawesome" />
+                                    <p>Once you authenticate run this command</p>
+                                    <code>sudo apt-get update</code>
+                                    <p>Then this one</p>
+                                    <code>sudo add-apt-repository ppa:certbot/certbot</code>
+                                    <p>it will ask you to click enter, once its finished run this one</p>
+                                    <code>sudo apt install python3-certbot-nginx</code>
+                                    <p>then this one to open our Nginx configuration file</p>
+                                    <code>sudo nano /etc/nginx/sites-available/digitalocean</code>
+                                    <p> and do this changes </p>
+                                    <code>
+                                        Change this --->  server_name localhost; <br>
+                                        with this --->  server_name yourdomain.com www.yourdomain.com;
+                                        <br> <br>
+                                        Change this --->  try_files $uri $uri/ =404;<br>
+                                        with this --->  try_files $uri /index.html;
+                                    </code> 
+                                    <p>To save and exit file </p>
+                                    <code>Ctrl+X  yes  Enter</code>
+                                    <p>Then run all this commands one by one</p>
+
+                                    <code>sudo ufw allow 'Nginx Full'</code> <br>  <br>
+                                    <code>sudo ufw allow 'Nginx HTTP' </code>   <br>  <br>
+                                    <code>sudo ufw allow 'Nginx HTTPS'</code>  <br> <br>
+                                    <code>sudo ufw allow https</code> <br> <br> 
+                                    <p>Add your domain to the next command</p>
+                                    <code> 
+                                        sudo certbot --nginx -d domainName.com -d www.domainName.com
+                                    </code>
+                                    <p>Will ask you to add your email</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/11.PNG" alt="fontawesome" />
+                                    <p>Then it will ask you to agree on their terms of service</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/12.PNG" alt="fontawesome" />
+                                    <p>Will ask you if you want to redirect all traffic to HTTPS we pick number 2. </p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/13.PNG" alt="fontawesome" />
+                                    <p>Now if you navigate to your domain. you will see that the connection is secure </p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/14.PNG" alt="fontawesome" />
+                                    <p>In you vps command line send this command</p>
+                                    <code> cd /var/www/html</code>
+                                    <p>this commande to remove the default page digitalocean showing us when we navigate to our domain </p>
+                                    <code>rm index.html</code>
+                                    <p>now in you computer go to /Resumen/build file  and send this command, (add your server ip address before)</p>
+                                    <code> scp -r ./* root@SERVER IP HERE :/var/www/html </code>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/15.PNG" alt="fontawesome" />
+                                    <p>will ask you to add your password then the upload will start</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/16.PNG" alt="fontawesome" />
+                                    <p>And that would be it for deployment. remember if you have any difficulties try the tutorial video. if still you have issues open a support ticket and we will be happy to assist you</p>
+
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+
+                            <section id="step4" class="doc-section">
+                                <h2 class="section-title">Backed configuration</h2>
+                                <div class="section-block">
+                                    <iframe width="100%" height="465" src="https://www.youtube.com/embed/UdZeq3FXO7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <p>1 - Our backend will handle resume building. export to pdf. and payments processing.  connect to your vps using Putty.  and lets install Node.js with this command</p>
+                                    <code>sudo apt install nodejs </code>
+                                    <p> It will ask you to click yes.</p>
+                                    <p>2 -  Then this command will a dependency needed </p>
+                                    <code>sudo apt install chromium-browser</code>
+                                    <p> 3 - And this one too </p>
+                                    <code>sudo apt install npm</code>
+                                    <p> 4 - Our backend will use the port 8080, for this reason we need to make sure to allow 8080 traffic </p>
+                                    <code>sudo ufw allow 8080 </code>
+                                    <p> 5 -  Enter this command to navigate to /var/www directory</p>
+                                    <code>cd /var/www</code>
+                                    <p> 6 -  Enter this command to create a new directory where our backend files will be located</p>
+                                    <code>mkdir backend</code>
+                                    <p> 7 -  Enter this command to navigate to the backend directory</p>
+                                    <code>cd backend</code>
+                                    <p> 8 - Now in your computer  open Resumen/backend and open the command prompt in this directory  </p>
+                                    <code>Resumen_V0.1.6\Backend</code>
+                                    <p> 9- Open index.js with notepad and add your  domain in this lines  </p>
+                                    <code>
+                                        const websiteName =  "domain.com" /// domain.com  <br>
+                                        key: fs.readFileSync('/etc/letsencrypt/live/domain.com/privkey.pem'), <br>
+                                        cert: fs.readFileSync('/etc/letsencrypt/live/domain.com/fullchain.pem'),
+                                    </code>
+                                    <p> 10- Then save and run this command to upload files to our vps (make sure you add your vps ip address) </p>
+                                    <code>scp -r ./* root@ServerIp:/var/www/backend</code>
+                                    <p> 11- Now  go back to your server Putty window and make sure you are in the backend directory </p>
+                                    <code>cd /var/www/backend</code>
+                                    <p> 12 - We need to create a file that wil hold our stripe key and to do this enter this command </p>
+                                    <code>sudo nano .env</code>
+                                    <p> 13-  add this code , (Replace stripe secret key with yours) </p>
+                                    <code>STRIPE_SECRET="sk_test_51IZbSFKcjLOayGZuRkLjy61a6X1646KNLu1eH7BR2lDLHFIYNxMzerJm8QxDjngOydrwouhsmNtKFPlS0LnVnp2992300SRk7mS8D"</code>
+                                    <p> 14-  Make sure you are in var/www/backend and run this command</p>
+                                    <code>npm install</code>
+                                    <p> 15 - Now  our backend is  installed we need to configure Nginx to receive the api calls to the backend</p>
+                                    <code>sudo nano /etc/nginx/sites-available/digitalocean</code>
+                                    <p> 16 - under the server_name add the following location part: (to save the file Ctrl+x yes and Enter) </p>
+                                    <code>
+                                        location /api {
+                                            proxy_pass https://localhost:8080; <br>
+                                            proxy_http_version 1.1;<br>
+                                            proxy_set_header Upgrade $http_upgrade;<br>
+                                            proxy_set_header Connection 'upgrade';<br>
+                                            proxy_set_header Host $host;<br>
+                                            proxy_cache_bypass $http_upgrade;<br>
+                                             }
+                                    </code>
+                                    <p> 17 -  Again make sure you are in var/www/backend and run this commands one by one </p>
+                                    <code>sudo npm install -g pm2 </code> <br>
+                                    <code>pm2 start index.js </code> <br>
+                                    <code>pm2 startup systemd </code> <br>
+
+                                    <p>Then we run this command to restart Nginx, and that would be it.</p>
+                                    <code>sudo service nginx restart</code>
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                            </section>
+
+                            <!-- Troubleshooting -->
+
+                            <section id="Trouble-section" class="doc-section">
+                                <h2 class="section-title">Troubleshooting</h2>
+                                <p>In here we will try to cover all the problems that you can fall into. if you cant find your solution here. then just open a support ticker and we will assist quickly.</p>
+
+                                <div  id="trouble1" class="section-block">
+                                    <h5>My domain is not working</h5>
+                                    <p>After you link your domain to Digitalocean. sometimes it takes couple of minutes until your domain start working. if its still not showing anything when you navigate to your domain the problem most likely will be from your domain provider. try to check that you added digitalocean namespaces correctly                                </p>
+                                     <p>Go to you DNS settings  and make sure that you added the namespaces correctly like the following</p>  
+                                     <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/17.PNG" alt="fontawesome" />
+                                     <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/18.PNG" alt="fontawesome" />
+                                     <p>After you make sure that Digitalocean namespaces correctly added to your domain provider now we have one more thing to check </p>
+                                     <p>Open your Digitalocean account </p>
+                                     <p>1- Click on <b>Manage Domain</b></p>
+                                     <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/19.PNG" alt="fontawesome" />
+                                     <p> <b>domain.com</b> and <b>www.domain.com</b> needs to be directing to your vps ip like in the picture. if you cant see it then go back to the tutorial and follow the steps again </p>
+
+                                </div>
+                                
+
+                                <div  id="trouble2" class="section-block">
+                                    <h5>Facebook authentication not working</h5>
+                                    <p>To configure facebook authentication follow this steps, open <b> <a href="https://developers.facebook.com/"> Facebook For Developers</a></b></p>
+                                    <p>1.  click on <b>My Apps</b> </p>
+                                    <p>2.  click on <b>Create App</b> </p>
+                                    <p>3.  click on <b>Consumer</b>. then continue </p>
+                                    <p>4 . Give your app a name. (it will be visible to user while authenticating), then click on <b>Create App</b> </p>
+                                    <p>5. Look for Facebook Login, and click <b>Setup</b> </p>
+                                    <p>6. Click on <b>Web</b></p>
+                                    <p>7. Add your url and click <b>Save</b></p>
+                                    <p>8. Now go to <b>Settings</b> then click on <b>Basic</b> you will find <b>App Id</b> an <b>App Secret</b> copy this two keys </p>
+                                    <p>9. Open your firebase acccount and go to <b>Authentication</b>, then <b>Sign-in method</b> and under facebook add the keys like the following.</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/20.PNG" alt="fontawesome" />
+                                    <p>10. Copy this url.</p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/21.PNG" alt="fontawesome" />
+                                    <p>Go back to your Facebook developer account , under <b>Products</b> click <b>Settings</b></p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/22.PNG" alt="fontawesome" />
+                                    <p>And paste that url to <b>Valid OAuth Redirect URIs</b></p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/23.PNG" alt="fontawesome" />
+                                    <p>Now it you try to login with facebook it should works perfectly.</p>
+                                  </div>
+                                  
+                                <div  id="trouble3" class="section-block">
+                                    <p><b>Google Authentication not working</b></p>
+                                    <p>For this problem the problem will most likely be not authorizing your domain in firebase, </p>
+                                    <p> 1. Open <b>Firebase Account</b> Click on <b>Authentication</b>, then <b>Sign-in Method</b></p>
+                                    <p> 2. Scroll down and make sure you added your domain to <b>Authorized Domains</b></p>
+                                    <img  style="margin-bottom: 10px;" class="img-fluid" src="assets/images/tuto/deploy/24.PNG" alt="fontawesome" />
+                                </div>
+                                               
+                                <div  id="trouble4" class="section-block">
+                                 
+                                    <h4>Command Line Common Problems</h4>
+                                    <p><b>I Can't see my password while typing</b></p>
+                                      <p>That is completly normal, in the command line just type your password and click enter even if its not showed</p>
+                                      <p><b>I cant paste in the command line with  <code>CTRL + V</code></b></p>
+                                      <p>Instead of pasting with <code>CTRL + V</code>,  Instead  a right mouse click on the command line will paste data from to he command prompt </p>
+                                      <p><b>How to save file after making changes</b></p>
+                                       <p>Click on <code>Ctrl+X </code> it will ask you press yes , then <code>Enter</code></p>
+
+
+
+       
+                                </div>
+                            </section>
+
+         
+    
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#introduction-section">Introduction</a>
+	                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step1">Step One: Firebase</a>
+                                        <a class="nav-link scrollto" href="#step2">Step Two: App Configuration </a>
+                                        <a class="nav-link scrollto" href="#step3">Step Three: Deploying Front-end</a>
+                                        <a class="nav-link scrollto" href="#step4">Step Four: Deploying Backend</a>
+                                    </nav><!--//nav-->                                             
+                                    <a class="nav-link scrollto" href="#Trouble-section">Troubleshooting</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#trouble1">My domain not working</a>
+                                        <a class="nav-link scrollto" href="#trouble2">Facebook authentication not working</a>
+                                        <a class="nav-link scrollto" href="#trouble3">Google authentication not working</a>
+                                        <a class="nav-link scrollto" href="#trouble4">Command Line problems</a>
+                                    </nav><!--//nav-->   
+
+
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a> for developers</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+

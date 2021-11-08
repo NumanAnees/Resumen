@@ -1,0 +1,77 @@
+.dropdownInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.dropdownInput .dropdownInputTitle {
+  margin: 5px 0px;
+  color: #98A1B3;
+  font-size: 13px;
+}
+
+.dropdownInput input {
+  background-color: #F8FAFE;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  height: 35px;
+  font-family: "Poppins";
+}
+
+.dropdownInput input:focus {
+  outline-width: 0;
+}
+
+.dropdownInput input:focus ~ .border {
+  width: 100% !important;
+  display: initial;
+  opacity: 1;
+}
+
+.dropdownInput .border {
+  opacity: 0;
+  width: 0%;
+  height: 1px;
+  border: 1px solid transparent;
+  background-color: #694AFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dropdownInput .hidden {
+  display: none;
+}
+
+.dropdownInput .dropdownOptions {
+  width: 100%;
+  top: 78px;
+  z-index: 1000;
+  height: 200px !important;
+  overflow-y: scroll;
+}
+
+.dropdownInput .dropdownOptions .dropdownOption {
+  height: 40px;
+  background-color: #F8FAFE;
+  padding: 10px 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.dropdownInput .dropdownOptions .dropdownOption:hover {
+  background-color: #e4e6eb;
+  color: #1A66FC;
+}
+
+.checkout input {
+  background-color: white !important;
+}
+/*# sourceMappingURL=DropdownInput.css.map */

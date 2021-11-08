@@ -1,0 +1,240 @@
+.sidebar-wrapper {
+  position: relative;
+  width: 250px;
+  height: 100vh;
+}
+
+.sidebar-wrapper .sidebar {
+  width: inherit;
+  height: 100vh;
+  background-color: #2f49d1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-wrapper .sidebar .sidebar__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar-wrapper .sidebar .sidebar__head .sidebar__head-brand {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.sidebar-wrapper .sidebar .sidebar__devider {
+  width: 80%;
+  border: none;
+  height: 1px;
+  background-color: #afafaf;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker {
+  width: 80%;
+  height: 60px;
+  background-color: #576cd9;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-details .sidebar__projectPicker-name {
+  font-family: "Poppins";
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-details .sidebar__projectPicker-tasks {
+  font-family: "Poppins";
+  color: #9cabff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 15px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-arrows .sidebar__projectPicker-arrowUp {
+  width: 10px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.sidebar-wrapper .sidebar .sidebar__projectPicker .sidebar__projectPicker-arrows .sidebar__projectPicker-arrowDown {
+  width: 10px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__navigationList {
+  margin-top: 50px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__navigationList .sidebar__navigationList-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.sidebar-wrapper .sidebar .sidebar__navigationList .sidebar__navigationList-item .sidebar__navigationList-icon {
+  height: 20px;
+  width: 20px;
+  vertical-align: cover;
+}
+
+.sidebar-wrapper .sidebar .sidebar__navigationList .sidebar__navigationList-item .sidebar-navigatioList-itemLink,
+.sidebar-wrapper .sidebar .sidebar__navigationList .sidebar__navigationList-item .sidebar-navigatioList-itemLink:visited {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: white;
+  font-size: 13px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer {
+  margin-top: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .btnToggler {
+  display: none;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__accountStatus {
+  width: 90%;
+  height: 90px;
+  background-color: #243bb1;
+  border-radius: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 10px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__accountStatus .sidebar__accountStatus-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__accountStatus .sidebar__accountStatus-details .sidebar__accountStatus-name {
+  color: white;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+  margin: 10px 10px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__accountStatus .sidebar__accountStatus-details .sidebar__accountStatus-desc {
+  color: white;
+  font-family: "Poppins";
+  font-size: 12px;
+  margin: 10px 10px;
+  margin-top: 0px;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Poppins";
+  padding: 10%;
+  cursor: pointer;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__profile .sidebar__profile-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__profile .sidebar__profile-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.sidebar-wrapper .sidebar .sidebar__footer .sidebar__profile .sidebar__profie-colon div {
+  width: 5px;
+  height: 5px;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 3px;
+}
+/*# sourceMappingURL=sidebar.css.map */

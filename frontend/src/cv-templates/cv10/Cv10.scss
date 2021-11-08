@@ -1,0 +1,129 @@
+@import '../../components/variables.scss';
+.cv10-board{
+    
+    width: 21cm;
+    height: fit-content !important;
+    font-family: $font;
+        // cv-content
+        .cv10-content{
+            margin-top: 50px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 0px 40px;
+            .cv10-content-head{
+                height: 80px;
+                width: 100%;
+              h2{
+                font-weight: 700 !important;
+                margin: 0px;
+                font-size: 25px;
+              }
+              h3{
+                  margin: 0px;
+                  color: #078dff;
+              }
+            }
+
+            .cv10-content-body{
+              display: grid;
+              grid-template-columns: 4fr 2fr;
+              .cv10-sectionTitle{
+                border-bottom: 3px solid black;
+                margin-top: 20px;
+                h2{
+                  margin: 10px 0px;
+                }
+            }
+
+            .cv10-content-left{
+              padding-right: 10px;
+              box-sizing: border-box;
+              .cv10-summary{
+                font-size: 11px;
+              }
+              .cv10-jobItem{
+                .cv10-jobDesc{
+                  font-size: 11px;
+                }
+                .cv10-jobTitle{
+                  font-weight: 600;
+                
+                  span{
+                    color: #078dff;
+
+                  }
+                  p{
+                    margin: 0px;
+                    margin-top: 10px;
+                  }
+                  .cv10-jobtime{
+                    font-size: 10px;
+                    margin: 0px;
+                    color: rgb(122, 122, 122);
+                  }
+                  
+                }
+              }
+            }
+           .cv10-content-right{
+             box-sizing: border-box;
+             .cv10-infoSection{
+               .cv10-infoItem{
+                 margin-top: 10px;
+                 display: grid;
+                 grid-template-columns: 1fr 3fr;
+                 border-bottom: 1px dotted rgb(201, 201, 201);
+                 padding-bottom: 10px;
+                 .cv10-infoSectionLeft{
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   img{
+                     width: 20px;
+                   }
+                 }
+                 .cv10-infoSectionRight{
+                  display: flex;
+                  align-items: center;
+                  font-size: 11px;
+                }
+               }
+
+      
+             }
+
+             .cv10-languages{
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               font-weight: 600;
+               margin-top: 0px;
+               .cv10-Level{
+                 color: rgb(65, 64, 64);
+                 display: flex;
+                 justify-content: flex-end;
+               }
+             }
+             .cv10-skills{
+               display: flex;
+               flex-wrap: wrap;
+
+               .cv10-skill{
+                 padding: 5px 5px;
+                 border: 1px solid grey;
+                 border-radius: 5px;
+                 font-size: 11px;
+                 margin-left: 5px;
+                 margin-top: 5px;
+               }
+             }
+
+            }
+
+            }
+            
+        }
+}

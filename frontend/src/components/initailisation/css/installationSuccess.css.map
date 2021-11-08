@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,mBAAmB,CAAA;EACf,MAAM,EAAE,GAAG;EACX,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,WAAW,ECPR,SAAS;CDcf;;AAdD,AAQI,mBARe,CAQf,eAAe,CAAA;EACX,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "../installationSuccess/installationSuccess.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "installationSuccess.css"
+}

@@ -1,0 +1,201 @@
+.cv1-board {
+  width: 100%;
+  width: 21cm;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins";
+}
+
+.cv1-board .cv-content {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv1-board .cv-content .cv-head {
+  height: 10rem;
+  width: 100%;
+  background-color: white;
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+.cv1-board .cv-content .cv-head .cv__imageWrapper .cv__image {
+  border: 4px solid black;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cv1-board .cv-content .cv-head .cv__imageWrapper .cv__image .photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cv1-board .cv-content .cv-head .cv__head-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv1-board .cv-content .cv-head .cv__head-details h1, .cv1-board .cv-content .cv-head .cv__head-details h3 {
+  margin: 0px !important;
+}
+
+.cv1-board .cv-content .cv-head .cv__head-details h3 {
+  font-weight: 300;
+}
+
+.cv1-board .cv-content .cv__body {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  padding-top: 20px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton .subItem h3 {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton .subItem p {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton .skillItem {
+  margin-top: 10px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton .skillItem p {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton .skillItem .progressBar {
+  width: 100%;
+  height: 15px;
+  border: 1px solid black;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .cv__leftSecton .skillItem .progressBar .progressFilling {
+  height: 100%;
+  background-color: black;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .sectionLanguages {
+  margin-top: 20px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .sectionLanguages .sectionLanguage {
+  margin-top: 2px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 13px;
+}
+
+.cv1-board .cv-content .cv__body .cv__bodyLeft .sectionLanguages .sectionLanguage .language {
+  font-weight: 600;
+}
+
+.cv1-board .cv-content .cv__body .bodyRight {
+  margin-top: 20px;
+}
+
+.cv1-board .cv-content .cv__body .bodyRight .rightSection {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.cv1-board .cv-content .cv__body .bodyRight .rightSection .employmentWrapper {
+  margin-top: 10px;
+}
+
+.cv1-board .cv-content .cv__body .bodyRight .rightSection .employmentWrapper .employment__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 600;
+}
+
+.cv1-board .cv-content .cv__body .bodyRight .rightSection .employmentWrapper .employment__head .employment__jobTitle {
+  font-weight: 600;
+}
+
+.cv1-board .cv-content .cv__body .bodyRight .rightSection .employmentWrapper .employment__body p {
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.sectionTitle h1 {
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.sectionTitle .sectionTitle__underLine {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+  }
+}
+/*# sourceMappingURL=Cv1.css.map */

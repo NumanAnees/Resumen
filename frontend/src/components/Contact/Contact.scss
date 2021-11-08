@@ -1,0 +1,39 @@
+.custom-page__content{
+    .loading{
+        position: absolute;
+        z-index: 20000;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .custom-page__contactUs{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .custom-page-contactHead{
+            width: 60%;
+            .contact-success{
+                width: 100%;
+                height: 40px;
+                background-color: #b5f3cf;
+                border: 1px solid #2ecc71;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                font-size: 15px;
+                padding: 0px 10px;
+            }
+
+        }
+        .custom-page-contactBody{
+            width: 60%;
+        }
+    }
+}

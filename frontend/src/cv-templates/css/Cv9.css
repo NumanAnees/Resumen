@@ -1,0 +1,142 @@
+.cv9-board {
+  width: 100%;
+  width: 21cm;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins";
+  color: #3B3B3B;
+}
+
+.cv9-board .cv9-content {
+  margin-top: 50px;
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+}
+
+.cv9-board .cv9-content .cv9-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.cv9-board .cv9-content .cv9-head .cv9-name {
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-size: 37px;
+}
+
+.cv9-board .cv9-content .cv9-head .cv9-occupation {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.cv9-board .cv9-content .cv9-head .cv9-address {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection {
+  border-top: 2px solid #838383;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  margin-top: 20px;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv-bodySection-left span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-jobItem {
+  margin-top: 10px;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-jobItem .cv9-jobTitle {
+  font-weight: 700;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-skills .cv9-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-skills .cv9-skill .cv9-bullet {
+  width: 7px;
+  height: 7px;
+  background: black;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-bodySection-rightHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-bodySection-rightHead .cv9-jobTitle {
+  font-weight: 600;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right .cv9-bodySection-rightHead .cv9-bodySection-rightDates {
+  font-size: 13px;
+}
+
+.cv9-board .cv9-content .cv-body .cv9-bodySection .cv9-bodySection-right p {
+  font-size: 12px;
+  margin: 0px;
+}
+/*# sourceMappingURL=Cv9.css.map */

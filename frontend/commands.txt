@@ -1,0 +1,96 @@
+1 creat lemp droplet
+####### 
+2 point domain https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars
+####### 
+
+####### 
+3 - add certificate https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-18-04
+        . sudo apt-get update  
+	. sudo add-apt-repository ppa:certbot/certbot
+	. sudo apt install python3-certbot-nginx
+        . sudo nano /etc/nginx/sites-available/digitalocean   <-- or replace default with your website url if already added to nginx
+        . sudo nginx -t  <--- to verify the syntax of our file
+	. sudo systemctl reload nginx
+	. sudo ufw status
+	. sudo ufw allow 'Nginx Full'
+	. sudo ufw allow 'Nginx HTTP' 
+        . sudo ufw allow 'Nginx HTTPS'    <-- disallow http traffic 
+	. sudo certbot --nginx -d itsreact.com -d www.itsreact.com  <---  then  2 to redirect all traffic to https 
+        . Now if you go to your website you will see that its redirecting automatically to https 
+#########
+4 - Deployment https://www.digitalocean.com/community/tutorials/how-to-deploy-a-react-application-with-nginx-on-ubuntu-20-04
+
+	. cat /etc/nginx/sites-enabled/digitalocean  <-- or change digitalocean with your dommain name if you added it before
+	. nano  /etc/nginx/sites-enabled/digitalocean 
+	. replace location with this one :     try_files $uri /index.html;
+	. sudo systemctl reload nginx
+	. cd /var/www/html
+	. rm index.html  <-- to remove the default page that is served to us 
+        
+         Now we go back to our local environment and got o build file with command prompt
+	. scp -r ./* root@serverIpHere:/var/www/html
+	. y
+#########
+ Continue only if you have the extended license and you plan to use subscriptions.
+ You will not need this step if you will not use subscriptions
+ #####
+5- Deploying our backend.
+        . sudo apt install nodejs    <--- install node.js
+        . y 
+        . sudo apt install chromium-browser
+	. sudo apt install npm <--- install  npm 
+	. sudo ufw allow 8080 
+        . cd /var/www <-- we navigate to this directory
+        . mkdir backend   <-- make sure you are in the root directory "/"
+        . cd backend 
+        Now we go back to our computer  and go  to backend file with command prompt
+        And change certifacte inforation with ours
+
+	. scp -r ./* root@ServerIp:/var/www/backend
+
+        Now in server 
+	. cd backend
+         make sure you are in backend directory and run this command:
+	. sudo nano .env  <-- and add your stripe secret
+	. npm install
+
+        . sudo nano /etc/nginx/sites-available/digitalocean
+
+	under the server_name add the following location part:
+
+	location /api {
+        proxy_pass https://localhost:8080; #whatever port your app runs on
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+         }
+
+
+	. sudo npm install -g pm2   <--- install this package to run our backend as a service in the background
+	. pm2 start index.js  <-- to run our backend server
+	. pm2 startup systemd  
+	. sudo env PATH=$PATH:/usr/bin /usr/local/lib/node_modules/pm2/bin/pm2 startup systemd -u index --hp /home/index
+	
+	. sudo nginx -t <--- check syntax error
+	. sudo service nginx restart  <--- restart our server
+  
+
+
+	
+	
+	
+
+		
+
+
+        
+
+
+
+         
+	
+	
+
+	

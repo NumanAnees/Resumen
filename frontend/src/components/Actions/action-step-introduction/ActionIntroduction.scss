@@ -1,0 +1,98 @@
+@import "../../variables.scss";
+.action-introWrapper {
+    font-family: $font;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .head {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .brand {
+            span {
+                font-weight: 600;
+                font-size: 25px;
+                margin-left: 25px;
+            }
+        }
+        .authentication {
+            margin-right: 25px;
+            display: flex;
+            .authenticationButton {
+                border: 1px solid $btn-default;
+                padding: 10px;
+                border-radius: 5px;
+                color: $btn-default;
+                cursor: pointer;
+                transition: all 0.2s ease-in-out;
+                margin-right: 25px;
+                text-decoration: none;
+            }
+            .authenticationButton:hover {
+                background-color: $btn-default;
+                color: white;
+            }
+        }
+    }
+    .body {
+        display: flex;
+        width: 59%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        h1 {
+            font-size: 3rem;
+            line-height: 2.9rem;
+            span {
+                color: $btn-default;
+            }
+        }
+        ul {
+            margin-top: 20px;
+            list-style-type: none;
+            font-size: 16px;
+            color: #707981;
+            li {
+                display: flex;
+                margin-top: 20px;
+                .numberWrapper {
+                    background-color: #e9ecef;
+                    width: 40px;
+                    height: 40px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 10px;
+                    min-width: 40px;
+                }
+                span {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .footer {
+        padding-top: 10px;
+        text-align: center;
+        display: flex;
+        ul {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                margin-right: 22px;
+                a,a:visited {
+                    color: #707981;
+                    text-decoration: none;
+                    font-size: 14px;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

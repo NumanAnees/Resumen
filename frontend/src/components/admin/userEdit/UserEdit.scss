@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+.user {
+    .user_pageHead {
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+    font-family: $font;
+    .user__left {
+        padding: 20px;
+        .user__input {
+            margin-top: 20px;
+        }
+        .user__button {
+            margin-top: 20px;
+        }
+    }
+}

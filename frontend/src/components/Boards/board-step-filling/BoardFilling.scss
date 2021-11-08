@@ -1,0 +1,94 @@
+
+.isSaving{
+  background-color: rgb(143, 143, 143) !important;
+}
+.board {
+  .ad-mobile {
+    display: none;
+  }
+  .board-heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .cv {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .pagination {
+      list-style-type: none;
+      padding: 0;
+      justify-content: center;
+      .navigationImage{
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+      }
+      .navigationImagePrevious{
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        transform: rotate(180deg);
+      }
+      li {
+        display: inline;
+        padding: 0px 5px;
+        cursor: pointer;
+      }
+    }
+    .ads {
+      text-align: center;
+    }
+    border-radius: 6px;
+    .cvAction {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+      button {
+        margin-right: 10px;
+      }
+      .selectTemplateLink {
+        cursor: pointer;
+        display: inline;
+        font-size: 16px;
+        img {
+          width: 19px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  button {
+    cursor: pointer;
+    align-self: center;
+    font-size: 22px;
+  }
+}
+
+#Resume {
+  background-color: white;
+  width: 470px;
+  height: 700px;
+  margin: auto;
+  overflow: hidden;
+  border: 0px solid black;
+  position: relative;
+  overflow-y: scroll;
+  padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+  box-sizing: content-box; /* So the width will be 100% + 17px */
+  border-radius: 15px;
+  .cv-board,#resumen{
+    transform-origin: top;
+    transform: scale(0.625);
+
+    position: relative;
+    left: -155px;
+  }
+}
+#Resume::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}

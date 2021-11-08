@@ -1,0 +1,160 @@
+@import '../../components/variables.scss';
+
+.cv6-board{
+    width: 21cm;
+    min-height: 29.7cm;
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    color: #3B3B3B;
+    .cv6-content{
+        width: 100%;
+        display: grid;
+        font-size: 14px;
+        grid-template-columns: 2fr 5fr;
+        .cv6-left{
+            height: 100%;
+            background-color: #09043c;
+
+            .cv6-photo{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                margin-top: 50px;
+                justify-content: center;
+                img{
+                    width: 140px;
+                    height: 160px;
+                    border-radius: 10px;
+                }
+            }
+        .cv6-leftSection{
+            margin-top: 20PX;
+         .cv6-languagesItems{
+             .cv6-languagesItem{
+                 display: flex;
+                 justify-content: space-between;
+                 color: white;
+                 font-weight: 600;
+                 margin-top: 5px;
+                 .cv5-languageCircle{
+                     width: 15px ;
+                     height: 15px;
+                     background-color: white;
+                     border-radius: 20px;
+      
+                 }
+             }
+         }
+            .cv5-leftSectionContent{
+                width: 80%;
+                margin: auto;
+                .cv5-skillsItems{
+                    color: white;
+                    .cv5-skillItem{
+                      .cv5-ratingWrapper{
+                        width: 95%;
+                        height: 8px ;
+                        border: 2px solid white;
+                        padding: 4px;
+                        margin-top:5px;
+
+                        .cv5-rating{
+                            background-color: white;
+                            height: 100%;
+                        }
+                      }
+
+                    }
+                }
+                .cv5-leftSectionTitle{
+                    color: white;
+                    padding-bottom: 8px;
+                    margin-bottom: 20px;
+                    span{font-size: 20px; text-transform: uppercase;}
+                   border: 1px solid #213363;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                }
+                .cv5-contactItems{
+                    ul{
+                        list-style-type: none;
+                        margin: 0px;
+                        padding: 0px;
+                        color: white;
+                        li{
+                            margin: 0px;
+                            .cv5-contactItem{
+                                display: flex;
+                                margin-top: 10px;
+                                img{
+                                    width: 20px;
+                                    object-fit: contain;
+                                }
+                                span{
+                                    font-size: 12px;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }///cv-left
+    .cv5-right{
+        .cv5-rightContent{
+            width: 90%;
+            margin:auto;
+            color: black !important;
+            padding-top: 50px;
+            .cv5-rightSectionTitle{
+                color: black;
+                span{font-size: 20px;}
+                font-weight: 800;
+            }
+            // Head 
+            .cv5-rightHead{
+                display: flex;
+                flex-direction: column;
+                font-size: 22px;
+                margin-bottom: 10px;
+                .cv5-name{
+                    font-weight: 700;
+                    font-size: 40px;
+                }
+                
+            }/// head
+            .cv5-summary{
+                p{
+                    font-size: 11px;
+                    color: rgb(82, 82, 82);
+                }
+            } /// Summary
+            .cv5-experience{
+                .cv5-jobItem{
+                    margin-bottom: 10px;
+                    .cv5-jobTitle{
+                     font-weight: 600;
+                    }
+                    .cv5-jobDate{
+                        font-size: 11px;
+                    }
+                    p{
+                        font-size: 11px;
+                        margin: 0px;
+                        margin-top: 5px;
+                        color: rgb(82, 82, 82);
+
+                    }
+                }
+            }
+            
+        }
+     
+    }
+}
+}

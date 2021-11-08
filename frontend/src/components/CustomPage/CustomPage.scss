@@ -1,0 +1,187 @@
+@import "../variables.scss";
+.custom-page {
+  width: 100%;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  .loading {
+    position: absolute;
+    z-index: 20000;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .custom-page__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    .custom-page__nav__logo {
+      width: 170px;
+      height: 42px;
+    }
+    .custom-page__nav__action {
+      a {
+        padding: 10px 20px;
+        border: 1px solid #694aff;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #694aff;
+      }
+      a:hover {
+        background-color: #694aff;
+        color: white;
+      }
+    }
+    .custom-page__navlinks {
+      list-style-type: none;
+      display: flex;
+      padding: 0px;
+      font-weight: 400;
+      color: rgb(178, 168, 207);
+      li {
+        margin-right: 20px;
+        a {
+          cursor: pointer;
+          text-decoration: none;
+        }
+        a:visited {
+          color: rgb(178, 168, 207);
+        }
+        a:hover {
+          color: black;
+        }
+      }
+    }
+    .custom-page__navlinks--active {
+      color: black !important;
+      font-weight: 500;
+    }
+  }
+  // Page Content
+  .custom-page__content {
+    width: 70%;
+    align-self: center;
+    min-height: 70vh;
+  }
+  // Page Footer
+  .custom-page__footer-wrapper {
+    width: 100%;
+    height: 300px;
+    background-color: #fafafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .custom-page__footer-devider {
+      border: 1px solid black;
+      width: 80%;
+    }
+    .custom-page__footer-copyright {
+      width: 80%;
+      text-align: left;
+      span {
+        font-weight: 700;
+        font-size: 22px;
+        margin-right: 10px;
+      }
+    }
+    .custom-page__footer {
+      width: 80%;
+      align-self: center;
+      display: flex;
+      flex-direction: row;
+      .custom-page__footer-item {
+        width: 40%;
+        text-align: left;
+        p {
+          font-weight: 500;
+          color: rgb(107, 107, 107);
+        }
+        .custom-page__footer-item__title {
+          font-weight: 600;
+          font-size: 22px;
+        }
+      }
+      .custom-page__footer-item__social-links {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding: 0px;
+        li {
+          margin-right: 5px;
+        }
+      }
+      .custom-page__footer-item__website-links {
+        padding: 0px;
+        list-style-type: none;
+        li {
+          a {
+            font-weight: 500;
+            color: rgb(107, 107, 107);
+            text-decoration: none;
+          }
+          a:visited {
+            color: rgb(107, 107, 107);
+          }
+        }
+      }
+    }
+  }
+}
+.social-link__facebook {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #3b5998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link__icon {
+  fill: white;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+.social-link__twitter {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #55acee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link__pinterest {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #cb2027;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link__instagram {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #c32aa3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-link__youtube {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

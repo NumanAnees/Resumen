@@ -1,0 +1,47 @@
+.simpleTextArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0px;
+}
+
+.simpleTextArea .inputTitle {
+  margin: 5px 0px;
+  color: #98A1B3;
+  font-size: 15px;
+}
+
+.simpleTextArea textarea {
+  background-color: #F8FAFE;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  min-height: 100px;
+}
+
+.simpleTextArea textarea:focus {
+  outline-width: 0;
+}
+
+.simpleTextArea textarea:focus ~ .border {
+  width: 100% !important;
+  display: initial;
+  opacity: 1;
+}
+
+.simpleTextArea .border {
+  opacity: 0;
+  width: 0%;
+  height: 1px;
+  border: 1px solid transparent;
+  background-color: #694AFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/*# sourceMappingURL=SimpleTextarea.css.map */

@@ -1,0 +1,115 @@
+.ads {
+  height: 100%;
+  width: 60%;
+  padding-bottom: 400px;
+  overflow: hidden;
+}
+
+.ads .ads-list-wrapper {
+  height: 400px;
+}
+
+.ads .ads-list-wrapper .ads-list {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+  height: 200px;
+}
+
+.ads .ads-list-wrapper .ads-list .ads-item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ads .ads-list-wrapper .ads-list .ads-item .ads-item__image {
+  width: 500px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.ads .ads-list-wrapper .ads-list .ads-item .ads-item__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+}
+
+.ads .ads-list-wrapper .ads-list .ads-item .ads-item__details .ads-item__name span {
+  font-weight: 500;
+}
+
+.ads .ads-list-wrapper .ads-list .ads-item .ads-item__details .ads-item__date span {
+  font-weight: 500;
+}
+
+.ads .ads-list-wrapper .ads-form-holder {
+  background-color: white;
+  padding: 40px;
+}
+
+.ads-item__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ads-item__action .ads-item__action--red {
+  background-color: #e74c3c;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+.ads-item__action .ads-item__action--blue {
+  margin-top: 20px;
+  background-color: #2980b9;
+  font-weight: 500;
+  font-size: 17px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+/*# sourceMappingURL=AddAds.css.map */

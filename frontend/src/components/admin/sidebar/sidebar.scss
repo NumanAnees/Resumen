@@ -1,0 +1,173 @@
+@import "../../variables.scss";
+.sidebar-wrapper {
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    .sidebar {
+        width: inherit;
+        height: 100vh;
+        background-color: #2f49d1;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        align-items: center;
+        /// Head
+        .sidebar__head {
+            display: flex;
+            height: 10vh;
+            justify-content: center;
+            align-items: center;
+            .sidebar__head-brand {
+                color: white;
+                font-family: $font;
+                font-weight: 500;
+            }
+        }
+        // Devider
+        .sidebar__devider {
+            width: 80%;
+            border: none;
+            height: 1px;
+            background-color: #afafaf;
+        }
+        // Project Picker
+        .sidebar__projectPicker {
+            width: 80%;
+            height: 60px;
+            background-color: #576cd9;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .sidebar__projectPicker-avatar {
+                width: 35px;
+                height: 35px;
+                background-color: white;
+                border-radius: 40px;
+            }
+            .sidebar__projectPicker-details {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+                .sidebar__projectPicker-name {
+                    font-family: $font;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .sidebar__projectPicker-tasks {
+                    font-family: $font;
+                    color: #9cabff;
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+            .sidebar__projectPicker-arrows {
+                display: flex;
+                flex-direction: column;
+                margin-left: 15px;
+                .sidebar__projectPicker-arrowUp {
+                    width: 10px;
+                    transform: rotate(180deg);
+                }
+                .sidebar__projectPicker-arrowDown {
+                    width: 10px;
+                }
+            }
+        }
+        // Navigation List
+        .sidebar__navigationList {
+            margin-top: 50px;
+            list-style-type: none;
+            padding-left: 0px;
+            .sidebar__navigationList-item {
+                display: flex;
+                margin-top: 20px;
+                cursor: pointer;
+                .sidebar__navigationList-icon {
+                    height: 20px;
+                    width: 20px;
+                    vertical-align: cover;
+                }
+                .sidebar-navigatioList-itemLink,
+                .sidebar-navigatioList-itemLink:visited {
+                    font-family: $font;
+                    font-weight: 500;
+                    color: white;
+                    font-size: 13px;
+                    margin-left: 15px;
+                    text-decoration: none;
+                }
+            }
+        }
+        // Foooter
+        .sidebar__footer {
+            margin-top: auto;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            .btnToggler {
+                display: none;
+            }
+            // Account Status
+            .sidebar__accountStatus {
+                width: 90%;
+                height: 90px;
+                background-color: #243bb1;
+                border-radius: 20px;
+                align-self: center;
+                padding: 10px;
+                .sidebar__accountStatus-details {
+                    display: flex;
+                    flex-direction: column;
+                    .sidebar__accountStatus-name {
+                        color: white;
+                        font-family: $font;
+                        font-weight: 500;
+                        font-size: 14px;
+                        margin: 10px 10px;
+                    }
+                    .sidebar__accountStatus-desc {
+                        color: white;
+                        font-family: $font;
+                        font-size: 12px;
+                        margin: 10px 10px;
+                        margin-top: 0px;
+                    }
+                }
+            }
+            // Sidebar Profile
+            .sidebar__profile {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: $font;
+                padding: 10%;
+                cursor: pointer;
+                .sidebar__profile-image {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50px;
+                        object-fit: cover;
+                    }
+                }
+                .sidebar__profile-text {
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: white;
+                }
+                .sidebar__profie-colon {
+                    div {
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 20px;
+                        background-color: white;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

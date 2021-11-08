@@ -1,0 +1,48 @@
+.simpleInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.simpleInput .inputTitle {
+  margin: 5px 0px;
+  color: #98A1B3;
+  font-size: 13px;
+  font-family: "Poppins";
+}
+
+.simpleInput input {
+  font-family: "Poppins";
+  background-color: #F8FAFE;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 10px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.simpleInput input:focus {
+  outline-width: 0;
+}
+
+.simpleInput input:focus ~ .border {
+  width: 99% !important;
+  display: initial;
+  opacity: 1;
+}
+
+.simpleInput .border {
+  opacity: 0;
+  width: 0%;
+  border: 1px solid transparent;
+  background-color: #694AFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/*# sourceMappingURL=SimpleInput.css.map */

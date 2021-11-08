@@ -1,0 +1,116 @@
+.dashboardContentWrapper .dashboardSubtitle {
+  color: #98a1b3;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.dashboardContentWrapper .settingsCard {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.dashboardContentWrapper .settingsCard .dashboardAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 13px;
+}
+
+.dashboardContentWrapper .settingsCard .saveInput {
+  font-family: "Poppins";
+  font-size: 17px;
+  background-color: transparent;
+  width: 60px;
+  font-weight: 500;
+  border: 0px;
+  cursor: pointer;
+  color: #767c88;
+}
+
+.dashboardContentWrapper .settingsCard .saveInput:focus {
+  outline: none;
+}
+
+.dashboardContentWrapper .settingsCard .saveInput:hover {
+  color: #694AFF;
+}
+
+.settingsCard__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.settingsCard__plan .settingsCard__plan-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settingsCard__plan .settingsCard__plan-image img {
+  width: 50px;
+  height: 50px;
+}
+
+.settingsCard__plan .settingsCard__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.settingsCard__plan .settingsCard__details .settingsCard__details-title {
+  font-size: 17px;
+}
+
+.settingsCard__plan .settingsCard__details .settingsCard__details-desc {
+  font-size: 13px;
+  color: #98a1b3;
+}
+
+.settingsCard__plan .settingsCard__details-upgrade {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settingsCard__plan .settingsCard__details-upgrade a {
+  text-decoration: none;
+  color: #767c88;
+  font-weight: 500;
+}
+
+.settingsCard__plan .settingsCard__details-upgrade a:visited {
+  color: #767c88;
+}
+/*# sourceMappingURL=Settings.css.map */

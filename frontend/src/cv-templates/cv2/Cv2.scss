@@ -1,0 +1,165 @@
+ 
+@import '../../components/variables.scss';
+.cv2-board{
+    width: 100%;
+    width: 21cm;
+    height: fit-content !important;
+
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    // cv-content
+    .cv2-content{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+   
+        // Head
+        .cv2-head{
+            .cv-headCircle{
+                position: absolute;
+                width: 220px;
+                height: 220px;
+                border-radius: 200px;
+                background-color: #f0c30e;
+                top: 18px;
+                left: 20px;
+                z-index: 10;
+            }
+            .head-details{
+                z-index: 100;
+                height: 100%;
+                margin-left: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 90px;
+                h2{
+                    margin: 0px;
+                    font-size: 45px;
+                }
+                p{
+                    white-space: pre-wrap;
+                    margin: 0px;
+                    font-size: 35px;
+                }
+            }
+            display: flex;
+            flex-direction: column;
+        } ///Head
+        // Body
+        .cv2-body{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            z-index: 2000;
+            .cv-bodySection{
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                margin-top: 20px;
+                .cv-sectionLeft{
+                    font-weight: 800;
+                    font-size: 17px;
+                    line-height: 17px;
+                }
+                .cv-sectionRight{
+                    .skills{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        margin-bottom: 20px;
+                         .skill{
+                             display: flex;
+                             margin-top: 10px;
+            
+                             .name{
+                                font-weight: 600; 
+                                font-size: 10px;
+                            }
+                            .rating{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                        
+                                .bullet{
+                                    width: 10px;
+                                    height: 10px;
+                                    margin-left: 3px;
+                                    border-radius: 20px;
+                                    background-color: #f0c30e;
+                                }
+                            }
+                         }
+                    }
+                    border-bottom: 4px solid black;
+                    .cv-sectionRightExperience{
+                        display: grid;
+                        grid-template-columns: 1fr 3fr;
+                        .cv-jobDetailsLeft{
+                            display: flex;
+                            flex-direction: column;
+                            .employer{
+                                font-weight: 600;
+                                font-size: 13px;
+                            }
+                            .date{
+                                font-size: 11px;
+                            }
+                        }
+                        .cv-jobDetailsRight{
+                            display: flex;
+                            flex-direction: column;
+                            .cv-jobTitle{
+                                font-weight: 600;
+                                font-size: 13px;
+                            }
+                            .cv-jobDescription{
+                                font-size: 11px;
+                                white-space: pre-wrap;
+                            }
+                        }
+                    }
+                    .summary{
+                        font-size: 12px;
+                        margin: 0px;
+                        white-space: pre-wrap;
+                        padding-bottom: 10px;
+                    }
+                    .cv-contactDetails{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        .cv-contactItem{
+                            display: flex;
+                            .cv-contactItemImage{
+                                display: flex;
+                                img{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                            .cv-contactItemDetails{
+                                display: flex;
+                                flex-direction: column;
+                                margin-left: 10px;
+                                .cv-contactItemHead{
+                                    font-weight: 600;
+                                    font-size: 13px;
+                                }
+                                .cv-contactItemValue{
+                                    font-size: 10px;
+                                    min-height: 35px;
+                                    max-width: 300px;
+                                    word-wrap: break-word;
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }/// Body
+
+    }
+}

@@ -1,0 +1,129 @@
+@import "../../components/variables.scss";
+
+.cv7-board {
+    width: 21cm;
+    min-height: 29.7cm;
+    //background-color: red;
+    display: flex;
+    font-family: $font;
+    color: #3b3b3b;
+    .cv7-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // Head
+        .cv7-head {
+            width: 100%;
+            height: 250px;
+            background-color: black;
+            background-image: url("../../assets/cv7-assets/Web\ 1920\ –\ 1.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            h1 {
+                margin: 0px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+            h3 {
+                margin: 0px;
+                font-weight: 400;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+        }
+        ///Head
+        // Body
+        .cv7-body {
+            width: 90%;
+            display: grid;
+            grid-template-columns: 6fr 3fr;
+            margin-top: 10px;
+            .cv7-title {
+                .cv7-titleText {
+                    font-size: 23px;
+                    font-weight: 600;
+                    margin: 0px;
+                    color: black;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+            // Body left
+            .cv7-bodyLeft {
+                border-right: 1px solid rgb(226, 224, 224);
+                padding-left: 10px;
+                .cv7-summary {
+                    p {
+                        font-size: 11px;
+                        margin: 0px;
+                        color: grey;
+
+                    }
+                }
+
+                .cv7-employments {
+                    .cv7-employmentItem {
+                        .cv7-details {
+                            .cv7-jobTitle {
+                                font-weight: 600;
+                                padding: 0px;
+                                margin: 0px;
+                            }
+                            .cv7-dates {
+                                margin: 0px;
+                                padding: 0px;
+                                font-size: 11px;
+                                color: grey;
+                            }
+                        }
+                        .cv7-jobDescription {
+                            font-size: 11px;
+                            color: grey;
+
+                        }
+                    }
+                }
+            } /// Body Left
+            // Right
+            .cv7-bodyRight{
+                padding-left: 20px;
+                .cv7-details{
+                    .cv7-detailsItem{
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+                        font-size: 11px;
+                        img{
+                            width: 20px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .cv7-skills{
+                    .cv7-skillItem{
+                        margin-top: 10px;
+                        font-size: 11px;
+                    }
+                }
+                .cv7-languages{
+                    .cv7-languagesItem{
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 11px;
+                        .cv7-languageName{
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+            /// Body Right
+        }
+        /// Body
+    }
+}

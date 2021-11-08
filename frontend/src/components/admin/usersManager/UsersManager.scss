@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+.users {
+    font-family: $font;
+    height: 70vh;
+    .users__container {
+        width: 100%;
+        height: 100%;
+        .users__heading {
+            margin: 20px;
+            h1,
+            p {
+                margin: 0px;
+                padding: 0px;
+            }
+        }
+        .users__search {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            p {
+                font-weight: 600;
+            }
+            .searchButton {
+                display: inline !important;
+                margin-top: 10px;
+            }
+        }
+        .users__all {
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            .show__users {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .moreImage {
+                width: 25px;
+                cursor: pointer;
+            }
+        }
+    }
+}

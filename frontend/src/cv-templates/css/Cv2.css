@@ -1,0 +1,243 @@
+.cv2-board {
+  width: 100%;
+  width: 21cm;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins";
+}
+
+.cv2-board .cv2-content {
+  width: 90%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv2-board .cv2-content .cv2-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv2-board .cv2-content .cv2-head .cv-headCircle {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 200px;
+  background-color: #f0c30e;
+  top: 18px;
+  left: 20px;
+  z-index: 10;
+}
+
+.cv2-board .cv2-content .cv2-head .head-details {
+  z-index: 100;
+  height: 100%;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 90px;
+}
+
+.cv2-board .cv2-content .cv2-head .head-details h2 {
+  margin: 0px;
+  font-size: 45px;
+}
+
+.cv2-board .cv2-content .cv2-head .head-details p {
+  margin: 0px;
+  font-size: 35px;
+}
+
+.cv2-board .cv2-content .cv2-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  z-index: 2000;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  margin-top: 20px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionLeft {
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight {
+  border-bottom: 4px solid black;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .skills {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .skills .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .skills .skill .name {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .skills .skill .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .skills .skill .rating .bullet {
+  width: 10px;
+  height: 10px;
+  margin-left: 3px;
+  border-radius: 20px;
+  background-color: #f0c30e;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience .cv-jobDetailsLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience .cv-jobDetailsLeft .employer {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience .cv-jobDetailsLeft .date {
+  font-size: 11px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience .cv-jobDetailsRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience .cv-jobDetailsRight .cv-jobTitle {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-sectionRightExperience .cv-jobDetailsRight .cv-jobDescription {
+  font-size: 11px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .summary {
+  font-size: 12px;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails .cv-contactItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails .cv-contactItem .cv-contactItemImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails .cv-contactItem .cv-contactItemImage img {
+  width: 30px;
+  height: 30px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails .cv-contactItem .cv-contactItemDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 10px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails .cv-contactItem .cv-contactItemDetails .cv-contactItemHead {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cv2-board .cv2-content .cv2-body .cv-bodySection .cv-sectionRight .cv-contactDetails .cv-contactItem .cv-contactItemDetails .cv-contactItemValue {
+  font-size: 10px;
+  min-height: 35px;
+  max-width: 300px;
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=Cv2.css.map */

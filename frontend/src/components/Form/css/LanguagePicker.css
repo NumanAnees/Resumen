@@ -1,0 +1,85 @@
+.languagePickerWrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.languagePickerWrapper .languagePicker {
+  cursor: pointer;
+  min-width: 110px;
+}
+
+.languagePickerWrapper .languagePicker img {
+  width: 35px;
+  vertical-align: middle;
+  border-radius: 10px !important;
+}
+
+.languagePickerWrapper .languagePicker .language {
+  color: #98A1B3;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.languagePickerWrapper .languageDropdown {
+  background-color: #0f141f;
+  border-radius: 5px;
+  position: absolute;
+  top: 35px;
+  left: -20px;
+  width: 140px;
+}
+
+.languagePickerWrapper .languageDropdown ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 5px;
+}
+
+.languagePickerWrapper .languageDropdown ul li {
+  padding-left: 10px;
+}
+
+.languagePickerWrapper .languageDropdown ul li:hover {
+  background-color: #222d46;
+}
+
+.hidden {
+  display: none;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: all 2000ms;
+  transition: all 2000ms;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+/*# sourceMappingURL=LanguagePicker.css.map */

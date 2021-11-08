@@ -1,0 +1,130 @@
+.settings {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.settings .settings__navigation {
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  border-radius: 20px;
+  padding: 40px 0px;
+}
+
+.settings .settings__navigation ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.settings .settings__navigation ul li {
+  margin: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settings .settings__body {
+  background-color: white;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settings .settings__body .website__Settings {
+  padding: 20px;
+  font-family: "Poppins";
+  width: 100%;
+}
+
+.settings .settings__body .website__Settings p {
+  font-size: 13px;
+  color: grey;
+}
+
+.settings .settings__body .website__Settings .subscription__toggle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.settings .settings__body .website__Settings .subscription__toggle span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.settings .settings__body .settings__input {
+  margin-top: 10px;
+}
+
+.settings .settings__body .settings__subtitle {
+  font-weight: 700;
+  margin: 10px 0px;
+}
+
+.settings .settings__body .settings__pages ul {
+  margin-top: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settings .settings__body .settings__pages ul li {
+  margin-right: 10px;
+}
+
+.settings .settings__body .settings__pages ul li img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.settings .settings__body .settings__pages ul li a,
+.settings .settings__body .settings__pages ul li a:visited {
+  font-family: "Poppins";
+  color: dimgray;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.settings .settings__body .settings__formAction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=Settings.css.map */

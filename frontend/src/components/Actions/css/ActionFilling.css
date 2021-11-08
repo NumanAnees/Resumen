@@ -1,0 +1,106 @@
+.filling {
+  padding: 3rem 4.5rem 4.5rem 4rem;
+}
+
+.action-introWrapper {
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.action-introWrapper .formHead {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.action-introWrapper .cvTitle span {
+  font-size: 32px;
+}
+
+.action-introWrapper .progressLabel .title {
+  font-size: 0.8rem;
+}
+
+.action-introWrapper .progressLabel .value {
+  font-size: 0.8rem;
+}
+
+.action-introWrapper .ads-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+}
+
+.action-introWrapper .ads-wrapper .ads-area {
+  width: 500px;
+  height: 90px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.action-introWrapper .sectionHeading {
+  margin: 7px 0px;
+}
+
+.action-introWrapper .sectionHeading .sectionTitle {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0px;
+}
+
+.action-introWrapper .sectionHeading .sectionDescription {
+  color: #98a1b3;
+  font-size: 13px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.action-introWrapper .componentsWrapper {
+  margin-bottom: 70px;
+}
+
+.action-introWrapper form {
+  margin-top: 20px;
+}
+
+.action-introWrapper form .additionalDetailsToggle {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px 0px;
+}
+
+.action-introWrapper form .additionalDetailsToggle img {
+  vertical-align: middle;
+}
+
+.action-introWrapper form .additionalDetailsToggle span {
+  color: #0042c6;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.grid-2-col {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+/*# sourceMappingURL=ActionFilling.css.map */

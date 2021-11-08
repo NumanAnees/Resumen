@@ -1,0 +1,53 @@
+.dashboard__contact {
+  padding: 20px;
+  font-family: "Poppins";
+}
+
+.dashboard__contact .dashboard___contactHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard__contact .dashboard___contactHead h1,
+.dashboard__contact .dashboard___contactHead span {
+  display: inline;
+}
+
+.dashboard__contact .dashboard___contactHead span {
+  margin-left: 10px;
+  color: #6b6a6a;
+  font-size: 14px;
+}
+
+.dashboard__contact .dashboard__contactTable .dashboard__ContactTable-circleImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #694AFF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 22px;
+}
+
+.dashboard__contact .dashboard__contactTable .dashboard_contactTable-showMessage {
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Messages.css.map */

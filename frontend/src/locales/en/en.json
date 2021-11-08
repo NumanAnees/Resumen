@@ -1,0 +1,153 @@
+{
+    "intro":{
+        "titleLeft":"Your resume in three",
+        "titleSpan":"easy",
+        "titleRight":"steps",
+        "step1":"Select a template from our collection.",
+        "step2":"Build you resume using our easy to use resume builder .",
+        "step3":"Download your resume.",
+        "login":"Login",
+        "selectTemplate":"Select Template",
+        "rightReserved":"All Rights Reserved"
+    },
+    "selectionAction":{
+        "titleLeft":"Select a",
+        "titleSpan":"template",
+        "titleRight":"from the list.",
+        "templates":"Templates",
+        "account":"My Account",
+        "admin":"Admin"
+
+
+        
+    },
+    "form":{
+        "untitled":"Untitled",
+        "profileCompleteness":"Profile Completness",
+        "personalDetails":"Personal Details",
+        "firstName":"First Name",
+        "lastName":"Last Name",
+        "email":"Email",
+        "phone":"Phone",
+        "photo":"Photo",
+        "occupation":"Occupation",
+        "country":"Country",
+        "nationality":"Nationality",
+        "city":"City",
+        "address":"Address",
+        "postalcode":"Postal Code",
+        "dateOfBirth":"Date Of Birth",
+        "drivingLicense":"Driving License",
+        "profesionalSummary":"Professional Summary",
+        "profesionalSummarySubtitle":"Quick summary about your overall experience.",
+        "employmentHistory":"Employment History",
+        "employmentHistorySubtitle":"Include your last 10 years of relevant experience and dates in this section. List your most recent position first .",
+        "jobTitle":"Job Title",
+        "employer":"Employer",
+        "begin":"Begin",
+        "end":"End",
+        "description":"Description",
+        "education":"Education",
+        "educationSubtitle":"Include your last 10 years of education history  and dates in this section. List your most recent  position first .",
+        "school":"School",
+        "degree":"Degree",
+        "courseDescription":"Course Description",
+        "languages":"Languages",
+        "laguagesSubtitle":"Please enter the languages you are able to work with.",
+        "language":"Language",
+        "level":"Level",
+        "skills":"Skills",
+        "skillsSubtitle":"Please enter your skills and give each one a rating.",
+        "skillName":"Skill Name",
+        "rating":"Rating",
+        "addSkill":"Add Skill",
+        "addLanguage":"Add Language",
+        "addJob":"Add Job",
+        "addEducation":"Add Education",
+        "showDetails":"Show additional details",
+        "hideDetails":"Hide additional details",
+        "previous":"Previous",
+        "next":"Next",
+        "selectTemplate":"Select Template",
+        "save":"Save",
+        "download":"Download"
+    },
+    "login":{
+        "login":"Login",
+        "email":"Email",
+        "googleLogin":"Login with ",
+        "facebookLogin":"Login with",
+        "or":"Or",
+        "password":"Password",
+        "passwordRepeat":"Repeat Password",
+        "dontHaveAcc":"Don't have an account? ",
+        "signup":"Sign up",
+        "passwordLost":"Lost your password? ",
+        "recoverPassword":"Recover password",
+        "register":"Register",
+        "alreadyHaveAccount":"Already have an account?",
+        "passwordRecovery":"Password Recovery",
+        "recoverMyPassword":"Recover My Password"
+    },
+    "dashboard":{
+        "homepage":"Homepage",
+        "dashboard":"Dashboard",
+        "coverLetter":"Cover Letter",
+        "dashBoard":"Dashboard",
+        "goToResume":"Go To Resume",
+        "remove":"Remove",
+        "addNew":"Add New",
+        "addResume":"Add Resume",
+        "accountSettings":"Account Settings",
+        "logout":"Logout",
+        "settings":"Settings",
+        "personalInfo":"PERSONAL INFO",
+        "firstname":"First name",
+        "lastname":"Last name",
+        "changePassword":"CHANGE PASSWORD",
+        "newPassword":"New Password",
+        "save":"Save",
+        "commingSoon":"Coming soon",
+
+        "adsManager":"Ads Manager",
+        "currentAds":"Current Ads",
+        "name":"Name",
+        "date":"Date",
+        "bannerLink":"Banner Link",
+        "bannerName":"Banner Name",
+        "destinationLink":"Destination Link",
+        "add":"Add",
+        "noAdsFound":"No ads found!",
+
+        
+        "pages":"Pages",
+        "currentPages":"Current Pages",
+        "addPages":"Add Pages",
+        "pageName":"Page Name",
+        "addPage":"Add Page"
+  
+
+        
+        
+
+
+    },
+    "resume":{
+        "personalSummary":"Personal Summary",
+        "employmentHistory":"Employment History",
+        "educationHistory":"Education History",
+        "info":"Info",
+        "address":"Address",
+        "phone":"Phone",
+        "email":"Email",
+        "languages":"Languages",
+        "skills":"Skills"
+    },
+    "Language":{
+        "elemntary":"Elementary",
+        "Intermediate":"Intermediate",
+        "Advanced":"Advanced",
+        "Proficient":"Proficient"
+    }
+    
+}

@@ -1,0 +1,298 @@
+@import "../../../components/variables.scss";
+.custom-page__content {
+    width: 80%;
+    .loading {
+        position: absolute;
+        z-index: 20000;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .custom-page__Plans {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        .custom-page__Plans-heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                margin: 0px;
+            }
+            p {
+                font-size: 13px;
+                font-weight: 500;
+                color: rgb(138, 136, 136);
+            }
+        }
+        .custom-page__Plans-body {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .custom-page__Plans-card-active {
+                border: 1px solid #2ecc71 !important;
+            }
+            .custom-page__Plans-card {
+                height: fit-content;
+                margin-bottom: 00px;
+                border: 2px solid rgb(248, 246, 246);
+                border-radius: 3px;
+                width: 320px;
+                margin: 10px;
+                .custom-page__Plans-cardHead {
+                    height: 80px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 40px;
+                    .currency {
+                        font-size: 13px;
+                        display: inline;
+                        position: relative;
+                        top: -10px;
+                        font-weight: 600;
+                    }
+                    .custom-page__Plans-price {
+                        display: inline;
+                        font-size: 28px;
+                        font-weight: 700;
+                        .monthLabel {
+                            font-size: 20px;
+                            font-weight: 500;
+                        }
+                    }
+                    .planName {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        span:nth-child(2) {
+                            color: rgb(179, 179, 179);
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .planCard__body {
+                    padding-bottom: 20px;
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        li {
+                            display: flex;
+                            padding: 0px;
+                            justify-content: center;
+                            margin: 0px 50px;
+                            margin-top: 20px;
+                            .leftside {
+                                flex: 1;
+                                img {
+                                    width: 20px;
+                                    position: relative;
+                                    top: 5px;
+                                }
+                            }
+                            .rightside {
+                                flex: 5;
+                                display: flex;
+                                align-items: center;
+                                div {
+                                    font-size: 12px;
+                                    line-height: 14px !important;
+                                }
+                            }
+                        }
+                    }
+                    .planCard-paymentBtnBasic {
+                        background-color: $btn-default;
+                        color: white;
+                        padding: 10px;
+                        margin: 20px;
+                        border-radius: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-weight: 600;
+                        margin-top: 50px;
+                        cursor: pointer;
+                    }
+                    .planCard-paymentBtnBasic-active {
+                        background-color: #2ecc71 !important;
+                    }
+                }
+            }
+        }
+    }
+    .checkout__content {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        .checkout__content-left {
+            flex: 1;
+            .checkout__content-left-wrapper {
+                width: 58%;
+            }
+            .checkout__content-leftList {
+                list-style-type: none;
+                padding: 0px;
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 14px;
+                    margin-top: 10px;
+                    img {
+                        width: 15px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .checkout__content-leftQuestion {
+                margin-top: 20px;
+                h3 {
+                    margin: 0px;
+                }
+                p {
+                    margin: 5px 0px;
+                    font-size: 13px;
+                }
+                .methods {
+                    display: flex;
+                    img {
+                        width: 50px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .checkout__content-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .checkout__content-rightWrapper {
+                width: 80%;
+                background-color: #f2f5f78a;
+                height: 100%;
+                border-radius: 10px;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .head {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 19px;
+                    font-weight: 600;
+                    margin-top: 40px;
+                }
+                .body {
+                    display: flex;
+                    flex-direction: column;
+                    .whereLocated {
+                        font-weight: 500;
+                        margin: 10px 0px;
+                        margin-bottom: 0px;
+                    }
+                    .description {
+                        margin: 0px;
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                    .checkout-continue-btn {
+                        cursor: pointer;
+                        margin-top: 20px;
+                        background-color: $btn-default;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                    }
+                    .checkout-continue-btnOutlined {
+                        cursor: pointer;
+                        margin-top: 20px;
+                        color: $btn-default;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 15px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        border: 1px solid $btn-default;
+                        margin-top: 0px;
+                    }
+                    .checkout-continue-btn-light {
+                        cursor: pointer;
+                        margin-top: 20px;
+                        border: 1px solid $btn-default;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        border-radius: 5px;
+                        img {
+                            height: 50px;
+                            width: 100px;
+                            object-fit: contain;
+                        }
+                    }
+                    .card-details {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+                        .testWrapper{
+                            display: flex;
+                            flex-direction: column;
+                            .testHeading{
+                                font-size: 14px;
+                                font-weight: 600;
+                                color: rgb(95, 95, 95);
+                            }
+                            .testData{
+                                font-size: 11px;
+                            }
+                        }
+                        .checkout-input {
+                            background-color: white;
+                            padding: 10px 20px;
+                        }
+                        .card-nameHolder {
+                            margin: 10px 0px;
+                            border: 0px;
+                            outline: 0;
+                            padding: 10px;
+                            font-family: $font;
+                        }
+                        .checkout-input {
+                            font-size: 28px !important;
+                            margin: 5px 0px;
+                        }
+                    }
+                    height: 100%;
+                    .paimentConfirmation {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 20px;
+                        height: 100%;
+                        h2 {
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

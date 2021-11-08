@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,KAAK,CAAC;EAKF,WAAW,ECLR,SAAS;CDef;;AAfD,AACI,KADC,CACD,cAAc,CAAC;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;CACtB;;AAJL,AAMI,KANC,CAMD,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;CAOhB;;AAdL,AAQQ,KARH,CAMD,WAAW,CAEP,YAAY,CAAC;EACT,UAAU,EAAE,IAAI;CACnB;;AAVT,AAWQ,KAXH,CAMD,WAAW,CAKP,aAAa,CAAC;EACV,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "../userEdit/UserEdit.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "UserEdit.css"
+}

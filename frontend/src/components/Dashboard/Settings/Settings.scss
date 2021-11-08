@@ -1,0 +1,82 @@
+@import "../../variables.scss";
+.dashboardContentWrapper {
+    .dashboardSubtitle {
+        color: rgb(152, 161, 179);
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .settingsCard {
+        height: fit-content;
+        border-radius: 10px;
+        background-color: white;
+        padding: 20px;
+        display: block;
+        margin-bottom: 20px;
+        .dashboardAction {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 13px;
+        }
+        .saveInput {
+            font-family: $font;
+            font-size: 17px;
+            background-color: transparent;
+            width: 60px;
+            font-weight: 500;
+            border: 0px;
+            cursor: pointer;
+            color: rgb(118, 124, 136);
+        }
+        .saveInput:focus {
+            outline: none;
+        }
+        .saveInput:hover {
+            color: $btn-default;
+        }
+    }
+}
+
+
+
+.settingsCard__plan{
+    display: flex;
+    justify-content: space-between;
+    .settingsCard__plan-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .settingsCard__details{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+  
+        .settingsCard__details-title{
+            font-size: 17px;
+     
+        }
+        .settingsCard__details-desc{
+            font-size: 13px;
+            color: rgb(152, 161, 179);
+        }
+    }
+    .settingsCard__details-upgrade{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #767c88;
+            font-weight: 500;
+        }
+        a:visited{
+            color: #767c88;
+        }
+    }
+}

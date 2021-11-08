@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.cv7-board {
+  width: 21cm;
+  min-height: 29.7cm;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Poppins";
+  color: #3b3b3b;
+}
+
+.cv7-board .cv7-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cv7-board .cv7-content .cv7-head {
+  width: 100%;
+  height: 250px;
+  background-color: black;
+  background-image: url("../../assets/cv7-assets/Web 1920 – 1.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cv7-board .cv7-content .cv7-head h1 {
+  margin: 0px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.cv7-board .cv7-content .cv7-head h3 {
+  margin: 0px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.cv7-board .cv7-content .cv7-body {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 3fr;
+      grid-template-columns: 6fr 3fr;
+  margin-top: 10px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-title .cv7-titleText {
+  font-size: 23px;
+  font-weight: 600;
+  margin: 0px;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyLeft {
+  border-right: 1px solid #e2e0e0;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyLeft .cv7-summary p {
+  font-size: 11px;
+  margin: 0px;
+  color: grey;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyLeft .cv7-employments .cv7-employmentItem .cv7-details .cv7-jobTitle {
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyLeft .cv7-employments .cv7-employmentItem .cv7-details .cv7-dates {
+  margin: 0px;
+  padding: 0px;
+  font-size: 11px;
+  color: grey;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyLeft .cv7-employments .cv7-employmentItem .cv7-jobDescription {
+  font-size: 11px;
+  color: grey;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyRight {
+  padding-left: 20px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyRight .cv7-details .cv7-detailsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  font-size: 11px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyRight .cv7-details .cv7-detailsItem img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyRight .cv7-skills .cv7-skillItem {
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyRight .cv7-languages .cv7-languagesItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 11px;
+}
+
+.cv7-board .cv7-content .cv7-body .cv7-bodyRight .cv7-languages .cv7-languagesItem .cv7-languageName {
+  font-weight: 700;
+}
+/*# sourceMappingURL=Cv7.css.map */

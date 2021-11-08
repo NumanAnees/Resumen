@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,MAAM,CAAA;EACF,gBAAgB,ECCH,OAAO;EDApB,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,IAAI;EACZ,SAAS,EAAG,GAAG;EACf,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,UAAU;EAC3B,WAAW,EAAE,MAAM;EACnB,WAAW,ECTR,SAAS;EDUZ,QAAQ,EAAE,MAAM;EAChB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,KAAK;EACZ,GAAG,EAAE,CAAC;CACT",
+    "sources": [
+        "../board/Board.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "Board.css"
+}

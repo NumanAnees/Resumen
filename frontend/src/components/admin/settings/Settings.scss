@@ -1,0 +1,90 @@
+@import "../../variables.scss";
+.settings {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .settings__navigation {
+        background-color: white;
+        height: fit-content;
+        width: 100%;
+        border-radius: 20px;
+        padding: 40px 0px;
+        ul {
+            list-style-type: none;
+            
+            padding: 0px;
+            li {
+                margin: 20px;
+                font-family: $font;
+                font-weight: 500;
+                font-size: 16px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .settings__body {
+        background-color: white;
+        border-radius: 20px;
+        height: fit-content;
+        display: flex;
+        ///// Websites Settings
+        .website__Settings {
+            padding: 20px;
+            font-family: $font;
+            width: 100%;
+            p {
+                font-size: 13px;
+                color: grey;
+            }
+            .subscription__toggle {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                span {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        .settings__input {
+            margin-top: 10px;
+        }
+        .settings__subtitle {
+            font-weight: 700;
+            margin: 10px 0px;
+        }
+        .settings__pages {
+            ul {
+                margin-top: 0px;
+                padding: 0px;
+                list-style-type: none;
+                display: flex;
+                li {
+                    margin-right: 10px;
+                    img {
+                        width: 20px;
+                        vertical-align: middle;
+                        margin-left: 5px;
+                        cursor: pointer;
+                    }
+                    a,
+                    a:visited {
+                        font-family: $font;
+                        color: rgb(105, 105, 105);
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .settings__formAction {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+    }
+}

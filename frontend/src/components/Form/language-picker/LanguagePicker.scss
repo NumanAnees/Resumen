@@ -1,0 +1,66 @@
+
+
+.languagePickerWrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.languagePicker{
+    cursor: pointer;
+    min-width: 110px;
+    img{
+        width: 35px;
+        vertical-align: middle;
+        border-radius: 10px !important;
+    }
+    .language{
+        color: #98A1B3;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}
+.languageDropdown{
+    background-color: rgb(15, 20, 31);
+    border-radius: 5px;
+    position: absolute;
+    top: 35px;
+    left:  -20px;
+    width: 140px;
+    ul{
+        list-style-type: none;
+        padding: 0;
+        padding-top: 5px;
+        li{
+            padding-left: 10px;
+        }
+        li:hover{
+          background-color: rgb(34, 45, 70);
+        }
+    }
+}
+}
+
+.hidden{
+    display: none;
+}
+
+  .fade-appear-active {
+    opacity: 1;
+    transition: all 2000ms;
+  }
+
+  .fade-enter {
+    opacity: 0;
+  }
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 400ms;
+  }
+  .fade-exit {
+    opacity: 1;
+    transition: opacity 400ms;
+  }
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+  }

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAA;EACT,KAAK,EAAE,IAAI;CAmBd;;AApBD,AAEI,aAFS,CAET,YAAY,CAAA;EACR,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,UAAU,EAAE,IAAI;EAChB,gBAAgB,EAAE,KAAK;EACvB,KAAK,ECLG,OAAO;EDMf,WAAW,ECTZ,SAAS;EDUR,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,GAAG;EACX,sBAAsB,EAAE,IAAI;EAC5B,yBAAyB,EAAE,IAAI;EAC/B,0BAA0B,EAAE,IAAI;EAChC,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,GAAG,CAAC,KAAK,CCbT,OAAO;CDclB;;AAhBL,AAiBI,aAjBS,CAiBT,YAAY,AAAA,MAAM,CAAA;EACd,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../initialisationSetup/initialisationSetup.scss",
+        "../../variables.scss"
+    ],
+    "names": [],
+    "file": "initialisationSetup.css"
+}

@@ -1,0 +1,55 @@
+.toast {
+  position: absolute;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  top: 40px;
+  right: 20px;
+  z-index: 1000;
+  width: 400px;
+  height: 70px;
+  background-color: white;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.toast .iconAnimation {
+  height: 100%;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toast .toastDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins";
+  color: black;
+}
+
+.toast .toastDetails .toastTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.toast .toastDetails .toastMessage {
+  font-size: 13px;
+}
+
+.success {
+  border-left: 3px solid #2ecc71;
+}
+/*# sourceMappingURL=Toasts.css.map */

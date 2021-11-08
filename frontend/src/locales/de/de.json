@@ -1,0 +1,151 @@
+{
+    "intro":{
+        "titleLeft":"Ihr Lebenslauf in drei",
+        "titleSpan":"einfachen ",
+        "titleRight":"Schritten",
+        "step1":"Wählen Sie eine Vorlage aus unserer Sammlung.",
+        "step2":"Erstellen Sie Ihren Lebenslauf mit unserem benutzerfreundlichen Lebenslauf-Builder .",
+        "step3":"Laden Sie Ihren Lebenslauf herunter.",
+        "login":"Einloggen",
+        "selectTemplate":"Vorlage auswählen",
+        "rightReserved":"Alle Rechte vorbehalten"
+    },
+    "selectionAction":{
+        "titleLeft":"Wählen Sie a",
+        "titleSpan":"Vorlage",
+        "titleRight":"von der Liste.",
+        "templates":"Vorlagen",
+        "account":"Mijn rekening",
+        "admin":"beheerder"
+    },
+    "form":{
+        "untitled":"Ohne Titel",
+        "profileCompleteness":"Profil Vollständigkeit",
+        "personalDetails":"Persönliche Daten",
+        "firstName":"Vorname",
+        "lastName":"Nachname",
+        "email":"Email",
+        "phone":"Telefon",
+        "photo":"Foto",
+        "occupation":"Besetzung",
+        "country":"Land",
+        "city":"Land",
+        "address":"Nationalitet",
+        "nationality":"Staatsangehörigkeit",
+        "postalcode":"Postleitzahl",
+        "dateOfBirth":"Postleitzahl",
+        "drivingLicense":"Fahrerlaubnis",
+        "profesionalSummary":"Fahrerlaubnis",
+        "profesionalSummarySubtitle":"Kurze Zusammenfassung Ihrer allgemeinen Erfahrung.",
+        "employmentHistory":"Beschäftigungsgeschichte",
+        "employmentHistorySubtitle":"Geben Sie in diesem Abschnitt Ihre relevanten Erfahrungen und Daten der letzten 10 Jahre an. Listen Sie zuerst Ihre letzte Position auf.",
+        "jobTitle":"Berufsbezeichnung",
+        "employer":"Arbeitgeber",
+        "begin":"Start",
+        "end":"Ende",
+        "description":"Beschreibung",
+        "education":"Bildung",
+        "educationSubtitle":"Geben Sie in diesem Abschnitt Ihre letzten 10 Jahre Bildungsgeschichte und -daten an. Listen Sie zuerst Ihre letzte Position auf.",
+        "school":"Schule",
+        "degree":"Grad",
+        "courseDescription":"Kursbeschreibung",
+        "languages":"Sprachen",
+        "laguagesSubtitle":"Bitte geben Sie die Sprachen ein, mit denen Sie arbeiten können.",
+        "language":"Sprache",
+        "level":"Niveau",
+        "skills":"Kompetenzen",
+        "skillsSubtitle":"Bitte geben Sie Ihre Fähigkeiten ein. und geben Sie jedem eine Bewertung.",
+        "skillName":"Fähigkeitsname",
+        "rating":"Bewertung",
+        "addSkill":"Fähigkeit hinzufügen",
+        "addLanguage":"Sprache hinzufügene",
+        "addJob":"Job hinzufügen",
+        "addEducation":"Bildung hinzufügen",
+        "showDetails":"Zusätzliche Details anzeigen",
+        "hideDetails":"Zusätzliche Details ausblenden",
+        "previous":"Bisherige",
+        "next ":"Nächster",
+        "selectTemplate":"Vorlage auswählen",
+        "save":"speichern",
+        "download":"Herunterladen"
+
+    },
+    "login":{
+        "login":"Einloggen",
+        "email":"Email",
+        "googleLogin":"Einloggen mit",
+        "facebookLogin":"Einloggen mit",
+        "or":"Oder",
+        "password":"Passwort",
+        "passwordRepeat":"Passwort wiederholen",
+        "dontHaveAcc":"Nicht haben und Konto?",
+        "signup":"Anmelden",
+        "passwordLost":"Hast du dein Passwort nicht verloren?",
+        "recoverPassword":"Hast du dein Passwort nicht verloren?",
+        "register":"Registrieren",
+        "alreadyHaveAccount":"Sie haben bereits ein Konto?",
+        "passwordRecovery":"Passwort-Wiederherstellung",
+        "recoverMyPassword":"Mein Passwort wiederherstellen"
+    },
+    "dashboard":{
+        "homepage":"Startseite",
+        "dashboard":"Instrumententafel",
+        "coverLetter":"Motivationsschreiben",
+        "goToResume":"Zum Lebenslauf gehen",
+        "remove":"Entfernen",
+        "addNew":"Zum Lebenslauf gehen",
+        "addResume":"Lebenslauf hinzufügen",
+        "accountSettings":"Kontoeinstellungen",
+        "logout":"Ausloggen",
+        "settings":"die Einstellungen",
+        "personalInfo":"PERSÖNLICHE INFORMATIONEN",
+        "firstname":"Vorname",
+        "lastname":"Familienname, Nachname",
+        "changePassword":"PASSWORT ÄNDERN",
+        "newPassword":"Neues Kennwort",
+        "save":"Speichern",
+        "commingSoon":"Demnächst",
+
+        
+        "adsManager":"Anzeigenmanager",
+        "currentAds":"Aktuelle Anzeigen",
+        "name":"Name",
+        "date":"Datum",
+        "bannerLink":"Banner Link",
+        "bannerName":"Bannername",
+        "destinationLink":"Ziellink",
+        "add":"Hinzufügen",
+        "noAdsFound":"Keine Anzeigen gefunden!",
+                
+        "pages":"Seiten",
+        "currentPages":"Aktuelle Seiten",
+        "addPages":"Seiten hinzufügen",
+        "pageName":"Seitenname",
+        "addPage":"Seite hinzufügen"
+  
+
+        
+
+
+        
+    },
+    "resume":{
+        "personalSummary":"Persönliches Resümee",
+        "employmentHistory":"Beschäftigung",
+        "educationHistory":"Bildung",
+        "info":"Die Info",
+        "address":"Adresse",
+        "phone":"Telefon",
+        "email":"Email",
+        "languages":"Sprachen",
+        "skills":"Kompetenzen"
+    },
+    "Language":{
+        "elemntary":"Grundstufe",
+        "Intermediate":"Mittlere",
+        "Advanced":"Fortgeschrittene",
+        "Proficient":"Kompetent"
+    }
+    
+    
+}

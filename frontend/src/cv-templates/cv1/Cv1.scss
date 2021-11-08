@@ -1,0 +1,171 @@
+
+@import '../../components/variables.scss';
+
+.cv1-board{
+    width: 100%;
+    width: 21cm;
+    height: fit-content !important;
+
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    // cv-content
+    .cv-content{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        //background-color: black;
+        //cv-head
+        .cv-head{
+            height: 10rem;
+            width: 100%;
+            background-color: white;
+            margin-top: 4rem;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            .cv__imageWrapper{
+                .cv__image{
+                    border: 4px solid black;
+                    width: 150px;
+                    height: 150px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 20px;
+                    box-sizing: border-box;
+                    .photo{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .cv__head-details{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                h1,h3{
+                    margin: 0px !important;
+                }
+                h3{
+                    font-weight: 300;
+                }
+             }
+        }
+        
+         ///cv-head
+         .cv__body{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            padding-top: 20px;
+            .cv__bodyLeft{
+                .cv__leftSecton{
+                    width: 90%;
+                    margin-top: 20px;
+                    .subItem{
+                    
+                        h3{
+                            font-weight: 600;
+                            margin-bottom: 0px;
+                        }
+                        p{
+                            white-space: pre-wrap;
+                            margin: 0px;
+                            font-size: 13px;
+                        }
+                    }
+                    .skillItem{
+                        margin-top: 10px;
+                        p{
+                            white-space: pre-wrap;
+                            margin: 0px;
+                            font-size: 13px;
+                        }
+                        .progressBar{
+                            width: 100%;
+                            height: 15px;
+                            border: 1px solid black;
+                    
+                            .progressFilling{
+                                height: 100%;
+                                background-color: black;
+                            }
+                        }
+                    }
+                }
+                .sectionLanguages{
+                    margin-top: 20px;
+                    .sectionLanguage{
+                        margin-top: 2px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 13px;
+
+                        .language{
+                            font-weight: 600;
+                        }
+                    }
+                }
+                
+            } /// Body left
+            // body right
+            .bodyRight{
+                                    margin-top: 20px;
+                                    .rightSection{
+                                        margin-top: 20px;
+                                        font-size: 13px;
+                                        .employmentWrapper{
+                                            margin-top: 10px;
+                                            .employment__head{
+                                                display: flex;
+                                                justify-content: space-between;
+                                                font-weight: 600;
+                                                .employment__jobTitle{
+                                                    font-weight: 600;
+                                                }
+                                            }
+                                            .employment__body{
+                                                p{
+                                                    white-space: pre-wrap;
+                                                    margin: 0px;
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+            }
+            /// body right
+        
+        }
+         
+    }
+    /// cv-content
+} /// Board
+
+.sectionTitle{
+
+    h1{
+        font-size: 20px;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .sectionTitle__underLine{
+        width: 100%;
+        height: 10px;
+        background-color: black;
+        margin-bottom: 10px;
+    }
+    p{
+        white-space: pre-wrap;
+
+    }
+}
+@media print {
+    body {-webkit-print-color-adjust: exact;}
+}

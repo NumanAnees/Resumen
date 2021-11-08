@@ -1,0 +1,107 @@
+.cv3-board{
+    width: 100%;
+    width: 21cm;
+    height: fit-content !important;
+
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    font-family: "Georgia";
+    color: #3B3B3B;
+    // cv-content
+    .cv3-content{
+        margin-top: 50px;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        // Head
+        .cv3-head{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            .cv3-name{
+                color: #be8a95;
+                margin: 0px;
+                margin-bottom: 10px;
+                font-size: 30px;
+            }
+            .cv3-occupation{
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            .cv3-address{
+                max-width: 200px;
+                word-wrap: break-word;
+            }
+
+        } 
+        ///Head
+        .cv-body{
+            .cv2-bodySection{
+                border-top: 2px solid rgb(131, 131, 131);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                margin-top: 20px;       
+                .cv-bodySection-left{
+                    span{
+                        font-size: 20px;
+                    }
+                }
+                .cv2-bodySection-right{
+                    .cv2-jobItem{
+                        margin-top: 10px;
+                        .cv2-jobTitle{
+                         font-weight: 700;
+                        }
+                    }
+                    .cv2-skills{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        .cv2-skill{
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            margin-top: 5px;
+                            max-width: 200px;
+                            word-break: break-all;
+                            .cv2-bullet{
+                                width: 10px;
+                                height: 10px;
+                                background: black;
+                                margin-right: 5px;
+                                border-radius: 40px;
+                            }
+                        }
+
+                    }
+                    .cv2-bodySection-rightHead{
+                        display: flex;
+                        justify-content:  space-between;
+                        margin-bottom: 5px;
+                        .cv2-jobTitle{
+                            font-weight: 600;
+                        }
+                        .cv2-bodySection-rightDates{
+                            font-size: 13px;
+                        }
+                    }
+                    p{
+                        white-space: pre-wrap;
+                        font-size: 12px;
+                        margin: 0px;
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }/// cv-content
+
+}

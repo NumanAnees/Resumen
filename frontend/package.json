@@ -1,0 +1,62 @@
+{
+  "name": "cv-creator",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:8080",
+  "homepage": "http://testok12.epizy.com/",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@stripe/react-stripe-js": "^1.4.0",
+    "@stripe/stripe-js": "^1.13.2",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.21.1",
+    "downloadjs": "^1.4.7",
+    "firebase": "^7.24.0",
+    "framer-motion": "^2.9.5",
+    "i18next": "^19.8.3",
+    "i18next-http-backend": "^1.0.21",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-ga": "^3.1.2",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^11.7.3",
+    "react-images-upload": "^1.2.8",
+    "react-lottie": "^1.2.3",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-quill": "^1.3.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4",
+    "react-transition-group": "^4.4.1",
+    "use-image": "^1.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
+  }
+}

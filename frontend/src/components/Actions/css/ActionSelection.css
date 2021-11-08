@@ -1,0 +1,14 @@
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.mobile-only {
+  display: none;
+}
+/*# sourceMappingURL=ActionSelection.css.map */

@@ -1,0 +1,79 @@
+.ads {
+    height: 100%;
+    width: 60%;
+    padding-bottom: 400px;
+    overflow: hidden;
+    .ads-list-wrapper {
+        height: 400px;
+        .ads-list {
+            display: block;
+            display: flex;
+            margin-top: 10px;
+            justify-self: center;
+            align-items: center;
+            flex-direction: column;
+            overflow-y: scroll;
+            height: 200px;
+            .ads-item {
+                height: 100%;
+                display: flex;
+                margin-top: 10px;
+                justify-content: center;
+                align-items: center;
+                .ads-item__image {
+                    width: 500px;
+                    height: 90px;
+                    border-radius: 10px;
+                    background-color: black;
+                }
+                .ads-item__details {
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding-left: 20px;
+                    .ads-item__name {
+                        span {
+                            font-weight: 500;
+                        }
+                    }
+                    .ads-item__date {
+                        span {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+        .ads-form-holder {
+            background-color: white;
+            padding: 40px;
+        }
+    }
+}
+.ads-item__action {
+    display: flex;
+    .ads-item__action--red {
+        background-color: #e74c3c;
+        font-weight: 500;
+        font-size: 17px;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        align-self: center;
+        cursor: pointer;
+    }
+    .ads-item__action--blue {
+        margin-top: 20px;
+        background-color: #2980b9;
+        font-weight: 500;
+        font-size: 17px;
+        color: white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin-left: 10px;
+        align-self: center;
+        cursor: pointer;
+    }
+}

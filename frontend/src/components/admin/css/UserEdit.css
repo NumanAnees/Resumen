@@ -1,0 +1,21 @@
+.user {
+  font-family: "Poppins";
+}
+
+.user .user_pageHead {
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.user .user__left {
+  padding: 20px;
+}
+
+.user .user__left .user__input {
+  margin-top: 20px;
+}
+
+.user .user__left .user__button {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=UserEdit.css.map */

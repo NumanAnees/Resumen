@@ -1,0 +1,72 @@
+
+@import'../../variables.scss';
+.dropdownInput{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  
+    .dropdownInputTitle{
+        margin: 5px 0px;
+        color: #98A1B3;
+        font-size: 13px;
+    }
+    input{
+        background-color: #F8FAFE;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 10px;
+        height: 35px;
+        font-family: $font;
+    }
+    input:focus {
+        outline-width: 0;
+        
+    }
+    input:focus  ~ .border {
+        width: 100% !important;
+        display: initial;
+        opacity: 1;
+    }
+        
+    .border{
+      opacity: 0;
+     width: 0%;
+     height: 1px;
+     border: 1px solid transparent ;
+     background-color:  $btn-default;
+     transition: all 0.3s ease-in-out;
+     border-bottom-left-radius: 5px;
+     border-bottom-right-radius: 5px;
+ }
+ .hidden{
+   display: none;
+ }
+    .dropdownOptions{
+      width: 100%;
+     // position: relative;
+      top:78px;
+      z-index: 1000;
+      //margin-bottom: 100px;
+      height: 200px !important;
+      overflow-y: scroll;
+      .dropdownOption{
+        height: 40px;
+        background-color:#F8FAFE ;
+        padding: 10px 10px;
+        cursor: pointer;
+        font-weight: 500;
+    
+
+      }
+      .dropdownOption:hover{
+        background-color:#e4e6eb ;
+        color: #1A66FC;
+      }
+    }
+
+}
+.checkout{
+  input{
+    background-color: white !important;
+  }
+}

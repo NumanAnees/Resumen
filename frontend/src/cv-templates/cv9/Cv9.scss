@@ -1,0 +1,112 @@
+@import '../../components/variables.scss';
+.cv9-board{
+    width: 100%;
+    width: 21cm;
+    height: fit-content !important;
+
+    //background-color: red;
+    display: flex;
+    justify-content: center;
+    font-family: $font;
+    color: #3B3B3B;
+    // cv-content
+    .cv9-content{
+        margin-top: 50px;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        // Head
+        .cv9-head{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .cv9-name{
+                font-weight: 800;
+                letter-spacing: 3px;
+                margin: 0px;
+                margin-bottom: 0px;
+                font-size: 30px;
+                font-size: 37px;
+            }
+            .cv9-occupation{
+                font-weight: 600;
+                font-size: 22px;
+                margin-bottom: 10px;
+                color: gray;
+            }
+            .cv9-address{
+                max-width: 200px;
+                word-wrap: break-word;
+            }
+
+        } 
+        ///Head
+        .cv-body{
+            .cv9-bodySection{
+                border-top: 2px solid rgb(131, 131, 131);
+                padding-top: 20px;
+                padding-bottom: 20px;
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                margin-top: 20px;       
+                .cv-bodySection-left{
+                    span{
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+                .cv9-bodySection-right{
+                    .cv9-jobItem{
+                        margin-top: 10px;
+                        .cv9-jobTitle{
+                         font-weight: 700;
+                        }
+                    }
+                    .cv9-skills{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        .cv9-skill{
+                            display: flex;
+                            align-items: center;
+                            font-size: 12px;
+                            margin-top: 5px;
+                            .cv9-bullet{
+                                width: 7px;
+                                height: 7px;
+                                background: black;
+                                margin-right: 5px;
+                                border-radius: 10px;
+                            }
+                        }
+
+                    }
+                    .cv9-bodySection-rightHead{
+                        display: flex;
+                        justify-content:  space-between;
+                        margin-bottom: 5px;
+                        .cv9-jobTitle{
+                            font-weight: 600;
+                        }
+                        .cv9-bodySection-rightDates{
+                            font-size: 13px;
+                        }
+                    }
+                    p{
+                        font-size: 12px;
+                        margin: 0px;
+                    }
+                    
+                }
+
+            }
+
+        }
+
+    }/// cv-content
+
+}
