@@ -172,7 +172,9 @@ app.get("/api/return", async (req, res) => {
 //   }, app);
 
 //---------------------Comment/del these 3 lines-----------------------
-
+if (process.env.NODE_ENV == "production") {
+  app.use(express.static("client/build"));
+}
 app.listen(PORT, () => {
-  console.log("done");
+  console.log(`Server is running at port : ${PORT}`);
 });
