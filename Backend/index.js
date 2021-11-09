@@ -15,7 +15,7 @@ puppeteer.use(StealthPlugin());
 require("dotenv").config();
 const app = express();
 const cors = require("cors");
-const port = 8080;
+const PORT = process.env.PORT || 8080;
 const websiteName = "buatcv.co.id"; /// add your domain like this format domain.com
 app.use(express.json());
 app.use(
@@ -173,6 +173,6 @@ app.get("/api/return", async (req, res) => {
 
 //---------------------Comment/del these 3 lines-----------------------
 
-app.listen(8080, () => {
+app.listen(PORT, () => {
   console.log("done");
 });
