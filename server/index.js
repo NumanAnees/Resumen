@@ -114,7 +114,7 @@ app.get("/invoice/:id", async (req, res) => {
     const resp = await i.createInvoice({
       amount: 30000.0,
       externalID: req.params.id,
-      successRedirectURL: "http://localhost:3000/dashboard",
+      successRedirectURL: "https://buatcv.co.id/dashboard",
     });
     res.json(resp);
   } catch (err) {
