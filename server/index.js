@@ -16,7 +16,7 @@ require("dotenv").config();
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 8080;
-const websiteName = "buatcv.co.id"; /// add your domain like this format domain.com
+const websiteName = "resumenn.herokuapp.com"; /// add your domain like this format domain.com
 app.use(express.json());
 app.use(
   express.urlencoded({
