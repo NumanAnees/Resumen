@@ -16,7 +16,7 @@ require("dotenv").config();
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 8080;
-const websiteName = "resumenn.herokuapp.com"; /// add your domain like this format domain.com
+const websiteName = "buatcv.co.id"; /// add your domain like this format domain.com
 app.use(express.json());
 app.use(
   express.urlencoded({
@@ -172,9 +172,6 @@ app.get("/api/return", async (req, res) => {
 //   }, app);
 
 //---------------------Comment/del these 3 lines-----------------------
-if (process.env.NODE_ENV == "production") {
-  app.use(express.static("client/build"));
-}
 app.listen(PORT, () => {
   console.log(`Server is running at port : ${PORT}`);
 });

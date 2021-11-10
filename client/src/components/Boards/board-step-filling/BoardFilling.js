@@ -90,7 +90,7 @@ class BoardFilling extends Component {
     this.saveToDatabase();
     setTimeout(() => {
       window.location.href = "/billing/plans";
-    }, 3000);
+    }, 8500);
 
     this.ShowToast("Download");
     // this.download();
