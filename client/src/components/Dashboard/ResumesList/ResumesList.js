@@ -304,53 +304,55 @@ class ResumesList extends Component {
     };
     const { t } = this.props;
     return (
-      <div className="dashboardContent">
-        <div className="head">
-          <div className="headContent">
-            <h2>{t("dashboard.dashboard")} </h2>
-            {this.state.resumes != null && (
-              <Link
-                onClick={() => addResume(localStorage.getItem("user"))}
-                to="/"
-                style={{ fontSize: "17px" }}
-                className="btn-default"
-              >
-                {" "}
-                + {t("dashboard.addNew")}{" "}
-              </Link>
-            )}
-          </div>
-          <hr />
-          {/* Resumes List */}
-          <div className="resumesList">
-            {this.state.resumes == "loading" ? (
-              <Lottie height="50" width="50" options={loadingSettings} />
-            ) : this.state.resumes == null ? (
-              <div
-                style={{
-                  textAlign: "center",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <img className="noResumesImage" src={addResumesImage} />
+      <>
+        <div className="dashboardContent">
+          <div className="head">
+            <div className="headContent">
+              <h2>{t("dashboard.dashboard")} </h2>
+              {this.state.resumes != null && (
                 <Link
                   onClick={() => addResume(localStorage.getItem("user"))}
-                  style={{ textDecoration: "none " }}
                   to="/"
+                  style={{ fontSize: "17px" }}
+                  className="btn-default"
                 >
-                  <a className="btn-default"> {t("dashboard.addResume")} </a>
+                  {" "}
+                  + {t("dashboard.addNew")}{" "}
                 </Link>
-              </div>
-            ) : (
-              <ul>
-                {/*  Return Resumes */}
-                {this.returnResumes()}
-              </ul>
-            )}
+              )}
+            </div>
+            <hr />
+            {/* Resumes List */}
+            <div className="resumesList">
+              {this.state.resumes == "loading" ? (
+                <Lottie height="50" width="50" options={loadingSettings} />
+              ) : this.state.resumes == null ? (
+                <div
+                  style={{
+                    textAlign: "center",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  <img className="noResumesImage" src={addResumesImage} />
+                  <Link
+                    onClick={() => addResume(localStorage.getItem("user"))}
+                    style={{ textDecoration: "none " }}
+                    to="/"
+                  >
+                    <a className="btn-default"> {t("dashboard.addResume")} </a>
+                  </Link>
+                </div>
+              ) : (
+                <ul>
+                  {/*  Return Resumes */}
+                  {this.returnResumes()}
+                </ul>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }
