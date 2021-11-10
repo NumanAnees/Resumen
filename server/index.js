@@ -5,14 +5,14 @@ const fs = require("fs");
 const puppeteer = require("puppeteer-extra");
 const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 const Xendit = require("xendit-node");
+require("dotenv").config();
+const Key = process.env.SECRET_KEY;
 const x = new Xendit({
-  secretKey:
-    "xnd_development_MhZ1i71PE10W07MRxaRVCk0TZu3mMsLH8rHYe1qHxL6efXykHB88ZuTk1MK2Hx",
+  secretKey: process.env.SECRET_KEY,
 });
 
 puppeteer.use(StealthPlugin());
 
-require("dotenv").config();
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 8080;

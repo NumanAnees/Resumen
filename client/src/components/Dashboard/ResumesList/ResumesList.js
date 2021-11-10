@@ -124,7 +124,7 @@ class ResumesList extends Component {
     if (localStorage.getItem("currentResumeId") == null) {
       localStorage.setItem(
         "currentResumeId",
-        Math.floosetJsonPbr(Math.random() * 20000).toString() + "xknd"
+        Math.floor(Math.random() * 20000).toString() + "xknd"
       );
       //console.log("----> ", localStorage.getItem("currentResumeId"));
     }
