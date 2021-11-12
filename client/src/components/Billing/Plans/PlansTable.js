@@ -26,7 +26,7 @@ const PlansTable = (props) => {
     try {
       var user = JSON.parse(localStorage.getItem("currentResumeItem"));
       const name = user.item.firstname + user.item.lastname;
-      const data = await fetch(`http://localhost:8080/invoice/${name}`);
+      const data = await fetch(`https://buatcv.co.id/invoice/${name}`);
       const res = await data.json();
       if (res) {
         setHide(true);
@@ -45,7 +45,7 @@ const PlansTable = (props) => {
   };
   const FindInvoice = async (id) => {
     try {
-      const data = await fetch(`http://localhost:8080/get/${id}`);
+      const data = await fetch(`https://buatcv.co.id/get/${id}`);
       const res = await data.json();
       // console.log(res);
       //console.log(res.status);
@@ -55,7 +55,7 @@ const PlansTable = (props) => {
   };
   const FindAll = async () => {
     try {
-      const data = await fetch("http://localhost:8080/invoices");
+      const data = await fetch("https://buatcv.co.id/invoices");
       const res = await data.json();
       //  console.log(res);
     } catch (err) {

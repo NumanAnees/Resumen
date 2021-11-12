@@ -15,7 +15,7 @@ puppeteer.use(StealthPlugin());
 
 const app = express();
 const cors = require("cors");
-const PORT = process.env.PORT || 8080;
+const port = 8080;
 const websiteName = "buatcv.co.id"; /// add your domain like this format domain.com
 app.use(express.json());
 app.use(
@@ -159,19 +159,22 @@ app.get("/api/return", async (req, res) => {
 //-----------------------------Un-comment this code-------------------------------
 
 // Listen both http & https ports
-// const httpsServer = https.createServer(
-//   {
-//     key: fs.readFileSync("/etc/letsencrypt/live/buatcv.co.id/privkey.pem"), // replace domain.com with your domain
-//     cert: fs.readFileSync("/etc/letsencrypt/live/buatcv.co.id/fullchain.pem"), // replace domain.com with your domain
-//   },
-//   app
-// );
+const httpsServer = https.createServer(
+  {
+    key: fs.readFileSync("/etc/letsencrypt/live/buatcv.co.id/privkey.pem"), // replace domain.com with your domain
+    cert: fs.readFileSync("/etc/letsencrypt/live/buatcv.co.id/fullchain.pem"), // replace domain.com with your domain
+  },
+  app
+);
 
 // const httpServer = http.createServer({
 
 //   }, app);
 
 //---------------------Comment/del these 3 lines-----------------------
-app.listen(PORT, () => {
-  console.log(`Server is running at port : ${PORT}`);
+// app.listen(PORT, () => {
+//   console.log(`Server is running at port : ${PORT}`);
+// });
+httpsServer.listen(port, () => {
+  console.log("HTTPS Server running on port " + port);
 });

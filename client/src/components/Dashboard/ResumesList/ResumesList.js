@@ -70,7 +70,7 @@ class ResumesList extends Component {
   }
   async FindInvoice(id, name) {
     try {
-      const data = await fetch(`http://localhost:8080/get/${id}`);
+      const data = await fetch(`https://buatcv.co.id/get/${id}`);
       const res = await data.json();
       const CurrentUser = JSON.parse(localStorage.getItem("currentResumeItem"));
       if (CurrentUser) {
