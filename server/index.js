@@ -172,8 +172,8 @@ const httpsServer = https.createServer(
 //   }, app);
 
 //---------------------Comment/del these 3 lines-----------------------
-// app.listen(PORT, () => {
-//   console.log(`Server is running at port : ${PORT}`);
+// app.listen(port, () => {
+//   console.log(`Server is running at port : ${port}`);
 // });
 httpsServer.listen(port, () => {
   console.log("HTTPS Server running on port " + port);

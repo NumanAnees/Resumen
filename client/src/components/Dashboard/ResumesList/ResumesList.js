@@ -70,15 +70,15 @@ class ResumesList extends Component {
   }
   async FindInvoice(id, name) {
     try {
-      const data = await fetch(`https://buatcv.co.id/get/${id}`);
-      const res = await data.json();
+      const res = await axios.get(`https://buatcv.co.id/get/${id}`);
+      //const res = await data.json();
       const CurrentUser = JSON.parse(localStorage.getItem("currentResumeItem"));
       if (CurrentUser) {
         const currentname =
           CurrentUser.item.firstname + CurrentUser.item.lastname;
         if (currentname == name) {
           //alert("match");
-          if (res.status == "PAID" || res.status == "SETTLED") {
+          if (res.data.status == "PAID" || res.data.status == "SETTLED") {
             console.log("reload");
             setTimeout(() => {
               window.location.reload();
@@ -87,7 +87,7 @@ class ResumesList extends Component {
         }
       }
       const oldUser = JSON.parse(localStorage.getItem(name));
-      oldUser.status = res.status;
+      oldUser.status = res.data.status;
 
       localStorage.setItem(name, JSON.stringify(oldUser));
     } catch (err) {

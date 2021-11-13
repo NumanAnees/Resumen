@@ -1,4 +1,5 @@
 import React, { Component, useState, useEffect } from "react";
+import axios from "axios";
 //import { Payment, redirectToInvoice } from "./Payment";
 import Checkimage from "../../../assets/check.png";
 
@@ -26,15 +27,17 @@ const PlansTable = (props) => {
     try {
       var user = JSON.parse(localStorage.getItem("currentResumeItem"));
       const name = user.item.firstname + user.item.lastname;
-      const data = await fetch(`https://buatcv.co.id/invoice/${name}`);
-      const res = await data.json();
+      console.log(name);
+      const res = await axios.get(`https://buatcv.co.id/invoice/${name}`);
+      console.log(res);
+      //const res = await data.json();
       if (res) {
         setHide(true);
-        window.location.href = res.invoice_url;
+        window.location.href = res.data.invoice_url;
         //console.log(res);
         const objectInvoice = {
           invoice: true,
-          id: res.id,
+          id: res.data.id,
         };
         // console.log(objectInvoice);
         localStorage.setItem(name, JSON.stringify(objectInvoice));
