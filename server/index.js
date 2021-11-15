@@ -8,7 +8,9 @@ const Xendit = require("xendit-node");
 require("dotenv").config();
 const Key = process.env.SECRET_KEY;
 const x = new Xendit({
-  secretKey: process.env.SECRET_KEY,
+  secretKey:
+    process.env.SECRET_KEY ||
+    "xnd_development_MhZ1i71PE10W07MRxaRVCk0TZu3mMsLH8rHYe1qHxL6efXykHB88ZuTk1MK2Hx",
 });
 
 puppeteer.use(StealthPlugin());
