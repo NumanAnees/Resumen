@@ -70,7 +70,18 @@ class ResumesList extends Component {
   }
   async FindInvoice(id, name) {
     try {
-      const res = await axios.get(`https://buatcv.co.id/get/${id}`);
+      const axiosConfig = {
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",
+          "Access-Control-Allow-Origin": "*",
+          APITOKEN:
+            "xnd_development_MhZ1i71PE10W07MRxaRVCk0TZu3mMsLH8rHYe1qHxL6efXykHB88ZuTk1MK2Hx",
+        },
+      };
+      const res = await axios.get(
+        `https://buatcv.co.id/api/get/${id}`,
+        axiosConfig
+      );
       //const res = await data.json();
       const CurrentUser = JSON.parse(localStorage.getItem("currentResumeItem"));
       if (CurrentUser) {

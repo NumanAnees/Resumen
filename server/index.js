@@ -105,7 +105,7 @@ app.post("/api/export", async (req, res) => {
   } catch (error) {}
 });
 
-app.get("/invoice/:id", async (req, res) => {
+app.get("/api/invoice/:id", async (req, res) => {
   try {
     const { Invoice } = x;
     const invoiceSpecificOptions = {};
@@ -121,7 +121,7 @@ app.get("/invoice/:id", async (req, res) => {
     console.log(err);
   }
 });
-app.get("/get/:id", async (req, res) => {
+app.get("/api/get/:id", async (req, res) => {
   try {
     const { Invoice } = x;
     const invoiceSpecificOptions = {};
@@ -135,7 +135,7 @@ app.get("/get/:id", async (req, res) => {
     console.log(err);
   }
 });
-app.get("/invoices", async (req, res) => {
+app.get("/api/invoices", async (req, res) => {
   try {
     const { Invoice } = x;
     const invoiceSpecificOptions = {};

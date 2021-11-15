@@ -25,10 +25,21 @@ const PlansTable = (props) => {
   }, []);
   const CreateInvoice = async () => {
     try {
+      const axiosConfig = {
+        headers: {
+          "Content-Type": "application/json;charset=UTF-8",
+          "Access-Control-Allow-Origin": "*",
+          APITOKEN:
+            "xnd_development_MhZ1i71PE10W07MRxaRVCk0TZu3mMsLH8rHYe1qHxL6efXykHB88ZuTk1MK2Hx",
+        },
+      };
       var user = JSON.parse(localStorage.getItem("currentResumeItem"));
       const name = user.item.firstname + user.item.lastname;
       console.log(name);
-      const res = await axios.get(`https://buatcv.co.id/invoice/${name}`);
+      const res = await axios.get(
+        `https://buatcv.co.id/api/invoice/${name}`,
+        axiosConfig
+      );
       console.log(res);
       //const res = await data.json();
       if (res) {
